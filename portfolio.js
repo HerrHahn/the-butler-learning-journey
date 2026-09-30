@@ -9,7 +9,7 @@
     if(!raw.profile||!raw.chapters||typeof raw.chapters!=='object'||Array.isArray(raw.chapters))throw new Error('Die Projektdatei ist unvollständig.');
     out.profile={name:text(raw.profile.name,'Name',200),group:text(raw.profile.group,'Klasse',100)};
     if(raw.active!=='overview'&&!course.some(c=>c.id===raw.active))throw new Error('Unbekanntes Kapitel.');
-    if(!Number.isInteger(raw.step)||raw.step<0||raw.step>3)throw new Error('Ungültiger Lernschritt.');
+    if(!Number.isInteger(raw.step)||raw.step<0||raw.step>=(course.find(c=>c.id===raw.active)?.stages.length||1))throw new Error('Ungültiger Lernschritt.');
     out.active=raw.active;out.step=raw.step;
     for(const id of Object.keys(raw.chapters))if(!course.some(c=>c.id===id))throw new Error('Unbekanntes Kapitel in der Datei.');
     for(const c of course){
@@ -23,13 +23,14 @@
     return out;
   }
   function wrap(work){return {type:TYPE,version:VERSION,savedAt:new Date().toISOString(),work};}
-  function exportSections(work,course,scope){
+  function exportSections(work,course,scope,summaryOnly=false){
     const selected=scope==='all'?course:course.filter(c=>c.id===scope);
+    if(summaryOnly)return selected.map(c=>({title:c.title,meta:c.consolidation.method,blocks:c.stages[4].fields.map(f=>({label:f[1],text:work.chapters[c.id].answers[f[0]]||'—'}))}));
     return selected.map(c=>({title:c.title,meta:`Lessons ${c.lessons} · ${c.product}`,blocks:[...c.stages.flatMap(s=>s.fields.map(f=>({label:f[1],text:work.chapters[c.id].answers[f[0]]||'—'}))),{label:'Pocket notes',text:work.chapters[c.id].notes||'—'},{label:'Self-check',text:c.stages[3].checks.map((t,i)=>`${work.chapters[c.id].checks[i]?'[x]':'[ ]'} ${t}`).join('\n')},{label:'Feedback',text:work.chapters[c.id].feedback||'—'}]}));
   }
-  function makePdf(jsPDF,work,course,scope,fontBase64){
+  function makePdf(jsPDF,work,course,scope,fontBase64,summaryOnly=false){
     const doc=new jsPDF({unit:'mm',format:'a4',compress:true});
-    doc.addFileToVFS('NotoSans.ttf',fontBase64);doc.addFont('NotoSans.ttf','NotoSans','normal');doc.setFont('NotoSans');doc.setProperties({title:'The Butler — Learning portfolio',subject:'English Q1 LK',author:work.profile.name||'Learner'});
+    doc.addFileToVFS('NotoSans.ttf',fontBase64);doc.addFont('NotoSans.ttf','NotoSans','normal');doc.setFont('NotoSans');doc.setProperties({title:summaryOnly?'The Butler — Class consolidation':'The Butler — Learning portfolio',subject:'English Q1 LK',author:summaryOnly?'Class':work.profile.name||'Learner'});
     const width=166,bottom=272;let y=25;
     function newPage(){doc.addPage();y=24;}
     function lineBlock(content,size=11,color=[40,59,68],gap=5.8){
@@ -40,11 +41,11 @@
       y+=3;
     }
     lineBlock('THE BUTLER',12,[119,37,56],7);lineBlock('An American story',24,[73,24,37],11);
-    lineBlock('Learning portfolio · English Q1 LK',11,[85,104,116],6);
-    lineBlock(`Name: ${work.profile.name||'—'}    Class: ${work.profile.group||'—'}`,11);
+    lineBlock(summaryOnly?'Class consolidation · English Q1 LK':'Learning portfolio · English Q1 LK',11,[85,104,116],6);
+    if(!summaryOnly)lineBlock(`Name: ${work.profile.name||'—'}    Class: ${work.profile.group||'—'}`,11);
     lineBlock(`Exported: ${new Date().toLocaleString('de-DE')}`,9,[85,104,116],5);
-    lineBlock('This PDF is a reading copy. Keep your .butler.json file to continue editing.',9,[85,104,116],5);
-    const sections=exportSections(work,course,scope);
+    if(!summaryOnly)lineBlock('This PDF is a reading copy. Keep your .butler.json file to continue editing.',9,[85,104,116],5);
+    const sections=exportSections(work,course,scope,summaryOnly);
     sections.forEach((section,index)=>{if(index>0)newPage();else y+=5;
       lineBlock(section.title,19,[73,24,37],9);lineBlock(section.meta,9,[85,104,116],5);
       for(const b of section.blocks){if(y+22>bottom)newPage();lineBlock(b.label,12,[119,37,56],6.5);lineBlock(b.text);y+=3;}

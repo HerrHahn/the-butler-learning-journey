@@ -1,4 +1,3 @@
-/* Adapted from the supplied PowerPoint and Edumap; student-facing tasks. */
 const COURSE = [
   {
     "id": "opening",
@@ -48,8 +47,7 @@ const COURSE = [
             "Poster reading",
             "Observation → possible meaning → question"
           ]
-        ],
-        "html": "<figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"butler-poster.jpg\" alt=\"Poster showing Cecil from behind, facing a window and a crowd\"><figcaption>The Butler (2013) · poster. Analyse the contrast between service inside and protest outside.</figcaption></figure>"
+        ]
       },
       {
         "tab": "Compare",
@@ -61,8 +59,7 @@ const COURSE = [
             "Two settings, two roles",
             "At home… / At work… / The contrast suggests…"
           ]
-        ],
-        "html": "<div class=\"visual-pair\"><figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"cecil-home.jpg\" alt=\"Cecil and Gloria embrace at home\"><figcaption>Cecil at home · supplied PowerPoint, slide 3.</figcaption></figure><figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"cecil-work.jpg\" alt=\"Cecil holding a tray in a formal bedroom\"><figcaption>Cecil at work · supplied PowerPoint, slide 4.</figcaption></figure></div>"
+        ]
       },
       {
         "tab": "Connect",
@@ -92,9 +89,67 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Image/detail | interpretation | connection to an ideal",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "Why does the contrast between home and work matter?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W1, DS1, Std. 1: 10 Min. Poster, 15 Min. Bildvergleich, 15 Min. Gespräch, 5 Min. Leitfragen. Einstieg nach Folien 1–4. AFB I: beschreiben; AFB II: visuelle Gestaltung deuten; AFB III: Ideale problematisieren. Anschließend beginnt Kapitel 2."
+    "teaching": "W1, DS1, Std. 1: 10 Min. Poster, 15 Min. Bildvergleich, 15 Min. Gespräch, 5 Min. Leitfragen. Einstieg nach Folien 1–4. AFB I: beschreiben; AFB II: visuelle Gestaltung deuten; AFB III: Ideale problematisieren. Anschließend beginnt Kapitel 2. Plenumssicherung: Think–pair–share: evidence board (10 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Think–pair–share: evidence board",
+      "duration": "10 minutes",
+      "steps": [
+        "Think: choose one precise detail from each image (1 min).",
+        "Pair: compare observation, interpretation and an American ideal (3 min).",
+        "Share: collect and challenge claims in the plenary. Agree on three supported conclusions (4 min).",
+        "The class checks the written record; mark an unresolved question (2 min)."
+      ]
+    },
+    "references": [
+      [
+        "butler-poster.jpg",
+        "The Butler poster",
+        "Film poster · Lee Daniels, 2013"
+      ],
+      [
+        "cecil-home.jpg",
+        "Cecil and Gloria at home",
+        "Cecil at home · supplied slide 3"
+      ],
+      [
+        "cecil-work.jpg",
+        "Cecil holding a tray at work",
+        "Cecil at work · supplied slide 4"
+      ]
+    ]
   },
   {
     "id": "slavery",
@@ -110,12 +165,8 @@ const COURSE = [
     "imageCredit": "FILM, HISTORY & FICTION",
     "materials": [
       {
-        "label": "Library of Congress · slavery & primary sources",
-        "url": "https://www.loc.gov/classroom-united-states-history-primary-source-timeline/national-expansion-and-reform-1815-1880/pre-civil-war-african-american-slavery/"
-      },
-      {
-        "label": "Library of Congress · Africans in America",
-        "url": "https://www.loc.gov/classroom-immigration/african/africans-in-america/"
+        "label": "Encyclopedia Virginia · The Transatlantic Slave Trade and the Middle Passage",
+        "url": "https://encyclopediavirginia.org/entries/transatlantic-slave-trade-the/#heading0"
       },
       {
         "label": "Harper · Bury Me in a Free Land",
@@ -145,7 +196,7 @@ const COURSE = [
       {
         "tab": "Locate",
         "title": "The Atlantic context",
-        "text": "Use an atlas and the linked historical sources. Locate Angola and its neighbours. Investigate why West and West-Central Africa became major regions of departure in the Atlantic slave trade; do not treat all periods or regions as identical.",
+        "text": "Use an atlas to locate Angola and its neighbours. Read the Encyclopedia Virginia article linked in Materials. Investigate the Atlantic trade routes, the roles of European merchants and African intermediaries, and the forced crossing. Distinguish what the article explains from questions that require another source.",
         "fields": [
           [
             "atlantic",
@@ -163,7 +214,7 @@ const COURSE = [
       {
         "tab": "Research",
         "title": "Life on a plantation",
-        "text": "You have 30 minutes. Research life on a cotton or tobacco plantation in the 18th or 19th century. Choose a place and period. Prepare at least half a page of notes or a short presentation, then share your findings.",
+        "text": "You have 30 minutes. Begin with the Encyclopedia Virginia article. Research life on a cotton or tobacco plantation in the 18th or 19th century: use the article for the trade and Virginia context, then find an additional source for daily plantation life. Choose a place and period. Prepare at least half a page of notes or a short presentation, then share your findings.",
         "fields": [
           [
             "plantation",
@@ -196,7 +247,7 @@ const COURSE = [
             "long"
           ]
         ],
-        "html": "<div class=\"reading-card\"><p><a href=\"https://www.poetryfoundation.org/poems/154190/bury-me-in-a-free-land\" target=\"_blank\" rel=\"noopener\">Open the poem ↗</a> or <a href=\"harper-poem.jpg\" target=\"_blank\">open the classroom version ↗</a>. The poem is an abolitionist intervention, not a neutral survey.</p></div>"
+        "html": "<div class=\"reading-card\"><p><a href=\"https://www.poetryfoundation.org/poems/154190/bury-me-in-a-free-land\" target=\"_blank\" rel=\"noopener\">Open the poem ↗</a> or <a href=\"harper-poem.jpg\" target=\"_blank\">open the classroom version ↗</a>. The poem is an abolitionist intervention, not a neutral survey.</p></div><figure class=\"lesson-figure\"><a href=\"harper-poem.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"harper-poem.jpg\" alt=\"Classroom text of Harper’s poem\"></a><figcaption>Harper: Bury Me in a Free Land · supplied slide 10 · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Create & reflect",
@@ -220,9 +271,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Concept A → relationship → concept B | supporting source",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "How did institutions sustain slavery, and how was it challenged?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "Std. 2 (Rest W1 DS1): 10 Min. geografischer Kontext, 25 Min. Recherche/Quellenarbeit, 10 Min. Sicherung. W1 DS2, Std. 3–4: 30 Min. Plantagenrecherche nach Folie 9, 15 Min. Austausch, 30 Min. Gedichtanalyse nach Folien 10–11, 15 Min. kreativer Transfer/Reflexion. Kreatives Schreiben ggf. zu Hause fertigstellen. Die Bildquelle zeigt eine Filmrekonstruktion, keine historische Fotografie der Sklaverei."
+    "teaching": "Std. 2 (Rest W1 DS1): 10 Min. geografischer Kontext, 25 Min. Recherche/Quellenarbeit, 10 Min. Sicherung. W1 DS2, Std. 3–4: 30 Min. Plantagenrecherche nach Folie 9, 15 Min. Austausch, 30 Min. Gedichtanalyse nach Folien 10–11, 15 Min. kreativer Transfer/Reflexion. Kreatives Schreiben ggf. zu Hause fertigstellen. Die Bildquelle zeigt eine Filmrekonstruktion, keine historische Fotografie der Sklaverei. Plenumssicherung: Concept map: slavery as a system (12 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Concept map: slavery as a system",
+      "duration": "12 minutes",
+      "steps": [
+        "Pairs suggest connections between labour, profit, violence, family, resistance and abolition (3 min).",
+        "Build one concept map on the board; label every connecting arrow with a verb (5 min).",
+        "Test two links against a historical source and Harper’s poem (2 min).",
+        "Agree on the central explanation and record a limit of the sources (2 min)."
+      ]
+    }
   },
   {
     "id": "twelve-years",
@@ -294,7 +386,8 @@ const COURSE = [
             "Coercion and justification",
             "What does Epps do? What does he claim? How does the film position the viewer?"
           ]
-        ]
+        ],
+        "html": "<figure class=\"lesson-figure\"><a href=\"12years-still.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"12years-still.jpg\" alt=\"Epps and Solomon Northup in the film\"></a><figcaption>12 Years a Slave · film still, supplied slide 12 · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Analyse",
@@ -325,9 +418,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Visible/audible detail | technique | effect | interpretation",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "How does filmmaking expose coercion rather than merely show it?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W1 Einzelstunde: 5 Min. Kontext, 4 Min. Erstsichtung, 5 Min. Aufträge, 4 Min. Zweitsichtung, 10 Min. Partnerarbeit, 12 Min. Analyse, 5 Min. Exit Ticket. Nach Folien 12–14. Nur die Szene ist verbindlich, der ganze Film bleibt freiwillige Vertiefung. Szene und alternative Textarbeit vorab vorbereiten."
+    "teaching": "W1 Einzelstunde: 5 Min. Kontext, 4 Min. Erstsichtung, 5 Min. Aufträge, 4 Min. Zweitsichtung, 10 Min. Partnerarbeit, 12 Min. Analyse, 5 Min. Exit Ticket. Nach Folien 12–14. Nur die Szene ist verbindlich, der ganze Film bleibt freiwillige Vertiefung. Szene und alternative Textarbeit vorab vorbereiten. Plenumssicherung: Freeze–frame analysis (8 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Freeze–frame analysis",
+      "duration": "8 minutes",
+      "steps": [
+        "Revisit one still or pause the selected scene. Describe without interpreting (2 min).",
+        "Collect observations about framing, performance and sound from the scene (2 min).",
+        "Agree on an interpretation and distinguish Epps’s justification from the film’s position (2 min).",
+        "Dictate a shared analytical paragraph and check its evidence (2 min)."
+      ]
+    }
   },
   {
     "id": "jim-crow",
@@ -400,7 +534,8 @@ const COURSE = [
             "Forms of resistance",
             "Identify two responses by Black communities and the risks involved."
           ]
-        ]
+        ],
+        "html": "<figure class=\"lesson-figure\"><a href=\"civil-rights.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"civil-rights.jpg\" alt=\"Civil rights demonstrators confronted by police\"></a><figcaption>Historical image from the supplied slides · distinguish protest from the laws being challenged · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Discuss",
@@ -433,9 +568,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Misconception | correction | historical evidence",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "Why did emancipation not end racial inequality?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W2 DS1: 15 Min. historischer Rahmen, 30 Min. Recherche, 15 Min. Partnerabgleich, 15 Min. Kugellager (3 Runden), 15 Min. schriftliche Sicherung. Nach Folien 15–20. Historische Verkürzung auf Folie 16 korrigiert: 15. Zusatzartikel bedeutet weder allgemeines Wahlrecht noch wirksamen Schutz vor jeder Unterdrückung."
+    "teaching": "W2 DS1: 15 Min. historischer Rahmen, 30 Min. Recherche, 15 Min. Partnerabgleich, 15 Min. Kugellager (3 Runden), 15 Min. schriftliche Sicherung. Nach Folien 15–20. Historische Verkürzung auf Folie 16 korrigiert: 15. Zusatzartikel bedeutet weder allgemeines Wahlrecht noch wirksamen Schutz vor jeder Unterdrückung. Plenumssicherung: Correct the misconception (10 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Correct the misconception",
+      "duration": "10 minutes",
+      "steps": [
+        "Respond to “Abolition immediately produced equal rights in everyday life” (2 min).",
+        "Groups identify legal, political and social counterevidence (3 min).",
+        "The plenary constructs a corrected explanation, distinguishing law and enforcement (3 min).",
+        "Check dates and sources; agree on the final wording (2 min)."
+      ]
+    }
   },
   {
     "id": "research",
@@ -495,7 +671,7 @@ const COURSE = [
             "Who investigates context, evidence, visuals, argument and audience questions?"
           ]
         ],
-        "html": "<div class=\"reading-card\"><h3>Six groups · six topics</h3><ol><li>The Harlem Renaissance</li><li>The Great Migration to the North</li><li>The Ku Klux Klan</li><li>Racial violence: lynchings and riots</li><li>Booker T. Washington and W. E. B. Du Bois</li><li>Marcus Garvey</li></ol><p><b>Your product:</b> a presentation of about 5 minutes, a poster and a handout with five questions for your audience. Display the posters while working on <i>The Butler</i>.</p></div>"
+        "html": "<div class=\"reading-card\"><h3>Six groups · six topics</h3><ol><li>The Harlem Renaissance</li><li>The Great Migration to the North</li><li>The Ku Klux Klan</li><li>Racial violence: lynchings and riots</li><li>Booker T. Washington and W. E. B. Du Bois</li><li>Marcus Garvey</li></ol><p><b>Your product:</b> a presentation of about 5 minutes, a poster and a handout with five questions for your audience. Display the posters while working on <i>The Butler</i>.</p></div><figure class=\"lesson-figure\"><a href=\"harlem.jpeg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"harlem.jpeg\" alt=\"Historical street parade in Harlem\"></a><figcaption>Historical photograph from the supplied PowerPoint; original photographer not specified · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Research",
@@ -566,9 +742,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Topic | key finding | source | connection to another group",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "What historical knowledge is essential for understanding Cecil’s world?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W2 DS2: 10 Min. Gruppen/Plan, 40 Min. Recherche, 25 Min. Poster und Handout, 15 Min. Proben/Quellencheck. Einzelstunde: 6 × 5 Min. Präsentation, 10 Min. Fragen und 5 Min. Transfer. Nach Folien 23–26, alle sechs Themen unverändert übernommen; Schreibweise W. E. B. Du Bois korrigiert. Poster bleiben während der Filmsichtung sichtbar."
+    "teaching": "W2 DS2: 10 Min. Gruppen/Plan, 40 Min. Recherche, 25 Min. Poster und Handout, 15 Min. Proben/Quellencheck. Einzelstunde: 6 × 5 Min. Präsentation, 10 Min. Fragen und 5 Min. Transfer. Nach Folien 23–26, alle sechs Themen unverändert übernommen; Schreibweise W. E. B. Du Bois korrigiert. Poster bleiben während der Filmsichtung sichtbar. Plenumssicherung: Jigsaw synthesis: six voices, one context (12 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Jigsaw synthesis: six voices, one context",
+      "duration": "12 minutes",
+      "steps": [
+        "Each group contributes one indispensable finding, not a new presentation (6 × 45 sec).",
+        "The class connects migration, culture, power, violence and political responses (3 min).",
+        "Agree on three connections to Cecil’s world and cite the group sources (3 min).",
+        "Check the record together (1½ min)."
+      ]
+    }
   },
   {
     "id": "viewing",
@@ -661,7 +878,7 @@ const COURSE = [
             "Compare Maynard’s advice with Freddie Fallows’s expectations. What does each reveal about survival, professionalism and power?"
           ]
         ],
-        "html": "<figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"family.jpg\" alt=\"The Gaines family and their domestic world\"><figcaption>The Butler · character study. Supplied PowerPoint, slide 33.</figcaption></figure>"
+        "html": "<figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"family.jpg\" alt=\"The Gaines family and their domestic world\"><figcaption>The Butler · character study. Supplied PowerPoint, slide 33.</figcaption></figure><figure class=\"lesson-figure\"><a href=\"maynard.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"maynard.jpg\" alt=\"Maynard advises the young Cecil\"></a><figcaption>The Butler · film still, supplied slide 31 · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Jigsaw",
@@ -685,9 +902,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Character | choice/pressure | scene | change",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "How do family relationships connect to public history?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W3 DS1 (Std. 11–12): 8 Min. Auftrag, 7:30 Min. Anfang, 7 Min. Auswertung, ca. 62 Min. Weitersehen, 5:30 Min. Sicherung. W3 DS2 (Std. 13–14): Film zu Ende (bis ca. 62:30 Min.), 10 Min. Expertengruppen, 12 Min. Mischgruppen, 5:30 Min. Sicherung. Insgesamt bis 132 Min. Film + 48 Min. Vor-/Nachbereitung. Folien 27–39; kein Kennedy-Arbeitsblock. Vorher Ausgabe, Sprache, Untertitel und Zugang prüfen. Nach der Sichtung Part One als häusliche Lektüre bis W5 aufgeben (nur organisatorisch vorziehen; inhaltliche Überleitung nach Obama)."
+    "teaching": "W3 DS1 (Std. 11–12): 8 Min. Auftrag, 7:30 Min. Anfang, 7 Min. Auswertung, ca. 62 Min. Weitersehen, 5:30 Min. Sicherung. W3 DS2 (Std. 13–14): Film zu Ende (bis ca. 62:30 Min.), 10 Min. Expertengruppen, 12 Min. Mischgruppen, 5:30 Min. Sicherung. Insgesamt bis 132 Min. Film + 48 Min. Vor-/Nachbereitung. Folien 27–39; kein Kennedy-Arbeitsblock. Vorher Ausgabe, Sprache, Untertitel und Zugang prüfen. Nach der Sichtung Part One als häusliche Lektüre bis W5 aufgeben (nur organisatorisch vorziehen; inhaltliche Überleitung nach Obama). Plenumssicherung: Character hot seat with evidence check (10 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Character hot seat with evidence check",
+      "duration": "10 minutes",
+      "steps": [
+        "One volunteer takes a character’s perspective; classmates ask about a decision (3 min).",
+        "An evidence team identifies the film scenes supporting or challenging the response (3 min).",
+        "Step out of role. Agree on a character comparison without treating invented speech as film evidence (2 min).",
+        "Record the shared interpretation and one ambiguity (2 min)."
+      ]
+    }
   },
   {
     "id": "analysis",
@@ -737,7 +995,8 @@ const COURSE = [
             "My pair of scenes",
             "Scene A / scene B / contrast / camera or editing choice"
           ]
-        ]
+        ],
+        "html": "<figure class=\"lesson-figure\"><a href=\"king-malcolm.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"king-malcolm.jpg\" alt=\"Martin Luther King Jr. and Malcolm X meeting\"></a><figcaption>Historical photograph from the supplied slide 45 · compare strategies without reducing either figure to a slogan · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Context",
@@ -781,9 +1040,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Claim | scene evidence | technique | effect | qualification",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "How does the film connect Cecil’s and Louis’s paths?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W3 Einzelstunde: 5 Min. Szenenauswahl, 8 Min. historischer Abgleich, 20 Min. Schreiben, 8 Min. Peer-Feedback, 4 Min. Sicherung. Schreibauftrag zu Hause ggf. ausbauen. Folien 34–41 und 45–46 dienen als Hintergrund; Kennedy entfällt. Lektüreauftrag am Stundenende: Part One bis Beginn W5, mit Leseprotokoll aus Kapitel 9."
+    "teaching": "W3 Einzelstunde: 5 Min. Szenenauswahl, 8 Min. historischer Abgleich, 20 Min. Schreiben, 8 Min. Peer-Feedback, 4 Min. Sicherung. Schreibauftrag zu Hause ggf. ausbauen. Folien 34–41 und 45–46 dienen als Hintergrund; Kennedy entfällt. Lektüreauftrag am Stundenende: Part One bis Beginn W5, mit Leseprotokoll aus Kapitel 9. Plenumssicherung: Joint construction: an analytical paragraph (8 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Joint construction: an analytical paragraph",
+      "duration": "8 minutes",
+      "steps": [
+        "Select one contrast between service and protest (1 min).",
+        "Contribute a claim, scene evidence and a film technique (2 min).",
+        "Build a paragraph aloud, explaining effects rather than retelling (3 min).",
+        "Test an alternative reading and revise the conclusion (2 min)."
+      ]
+    }
   },
   {
     "id": "obama",
@@ -876,7 +1176,7 @@ const COURSE = [
             "long"
           ]
         ],
-        "html": "<div class=\"reading-card\"><p><a href=\"https://obamawhitehouse.archives.gov/the-press-office/2015/06/26/remarks-president-eulogy-honorable-reverend-clementa-pinckney\" target=\"_blank\" rel=\"noopener\">Read the official transcript ↗</a>. Focus on the section beginning with the role of the Black church and the later passages on the Confederate flag, inequality and grace. Use paragraph openings or short quotations as references.</p></div>"
+        "html": "<div class=\"reading-card\"><p><a href=\"https://obamawhitehouse.archives.gov/the-press-office/2015/06/26/remarks-president-eulogy-honorable-reverend-clementa-pinckney\" target=\"_blank\" rel=\"noopener\">Read the official transcript ↗</a>. Focus on the section beginning with the role of the Black church and the later passages on the Confederate flag, inequality and grace. Use paragraph openings or short quotations as references.</p></div><figure class=\"lesson-figure\"><a href=\"obama-charleston.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"obama-charleston.jpg\" alt=\"Obama delivers the Charleston eulogy\"></a><figcaption>Charleston, 2015 · supplied slide 52 · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Evaluate",
@@ -900,9 +1200,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Evidence for change | continuing barriers | source | qualification",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "What does the comparison of 2008 and 2015 allow us to conclude?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W4 DS1, Std. 16–17: 10 Min. Filmende, 10 Min. Argumente, 40 Min. offener Brief, 15 Min. Peer-Feedback, 15 Min. Überarbeitung. W4 DS2, Std. 18: 8 Min. Charleston-Kontext/Video, 15 Min. Rhetorik in Expertengruppen, 12 Min. Sprachmittlung, 10 Min. Urteil. E-Mail/Analyse ggf. zu Hause fertigstellen. Folien 47–53 und Charleston Obama.docx. Obama bildet den Filmabschluss; erst danach folgt der inhaltliche Romanübergang."
+    "teaching": "W4 DS1, Std. 16–17: 10 Min. Filmende, 10 Min. Argumente, 40 Min. offener Brief, 15 Min. Peer-Feedback, 15 Min. Überarbeitung. W4 DS2, Std. 18: 8 Min. Charleston-Kontext/Video, 15 Min. Rhetorik in Expertengruppen, 12 Min. Sprachmittlung, 10 Min. Urteil. E-Mail/Analyse ggf. zu Hause fertigstellen. Folien 47–53 und Charleston Obama.docx. Obama bildet den Filmabschluss; erst danach folgt der inhaltliche Romanübergang. Plenumssicherung: Continuum debate: progress and its limits (12 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Continuum debate: progress and its limits",
+      "duration": "12 minutes",
+      "steps": [
+        "Position yourself on a continuum: “Obama’s election fundamentally changed racial equality” (2 min).",
+        "Hear contrasting arguments supported by the film and the Charleston speech (4 min).",
+        "Allow a change of position after counterevidence (2 min).",
+        "Agree on a qualified class judgment, including what remains disputed (4 min)."
+      ]
+    }
   },
   {
     "id": "bridge",
@@ -953,7 +1294,7 @@ const COURSE = [
             "Cecil / Louis / question for the novel"
           ]
         ],
-        "html": "<div class=\"reading-card\"><p>Do not equate professional adaptation with racial passing. Investigate both as different responses to unequal power, with different histories and consequences.</p></div>"
+        "html": "<div class=\"reading-card\"><p>Do not equate professional adaptation with racial passing. Investigate both as different responses to unequal power, with different histories and consequences.</p></div><figure class=\"lesson-figure\"><a href=\"family.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"family.jpg\" alt=\"The Gaines family\"></a><figcaption>The Butler · supplied slide 33: family and belonging · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Predict",
@@ -1014,9 +1355,50 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Film evidence | concept | question for Part One | limit of comparison",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "Which historical insights help us read the novel, and where must we avoid easy equivalences?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W4 DS2, Std. 19: 15 Min. Vergleich Film/Roman, 10 Min. Begriffe, 10 Min. Cover, 10 Min. Leseabgleich. W4 Einzelstunde, Std. 20: 15 Min. Lesesprechstunde, 20 Min. Leseprotokoll/Textbelege, 10 Min. Fragen. Hauslektüre lief seit Ende W3; Abschluss bis W5. Keine Inhaltsvermittlung späterer Romanteile. Edumap-Auftrag zur KI-Zusammenfassung wird erst nach eigener Lektüre kritisch eingesetzt."
+    "teaching": "W4 DS2, Std. 19: 15 Min. Vergleich Film/Roman, 10 Min. Begriffe, 10 Min. Cover, 10 Min. Leseabgleich. W4 Einzelstunde, Std. 20: 15 Min. Lesesprechstunde, 20 Min. Leseprotokoll/Textbelege, 10 Min. Fragen. Hauslektüre lief seit Ende W3; Abschluss bis W5. Keine Inhaltsvermittlung späterer Romanteile. Edumap-Auftrag zur KI-Zusammenfassung wird erst nach eigener Lektüre kritisch eingesetzt. Plenumssicherung: Bridge chart: compare without equating (10 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Bridge chart: compare without equating",
+      "duration": "10 minutes",
+      "steps": [
+        "Pairs propose connections among visibility, belonging, family and opportunity (2 min).",
+        "Build a film–concept–reading question chart together (4 min).",
+        "Identify the limits of comparing professional adaptation with racial passing (2 min).",
+        "Agree on working definitions and questions for Part One (2 min)."
+      ]
+    }
   },
   {
     "id": "novel",
@@ -1120,7 +1502,7 @@ const COURSE = [
             "Record the station questions, counterfactuals or comparison prompts required by your project."
           ]
         ],
-        "html": "<div class=\"reading-card\"><h3>Four projects from the Edumap</h3><ol><li><b>Places & Power:</b> map Mallard, the Dupont household, Opelousas, New Orleans, D.C., The Surly Goat and Maison Blanche where supported by Part One. Select three “power stations”, each with a scene, a two-line explanation and a discussion question.</li><li><b>Family Lines & Fault Lines:</b> build a timeline from Alphonse Decuir through Leon and Adele to the twins and Jude. Identify three transmissions of trauma and one possible break in a pattern. Prepare four counterfactual questions; distinguish speculation from text evidence.</li><li><b>Identity Under Pressure:</b> compare Desiree, Stella and Jude in a character triangle: traits, pressure, conflict, turning point. Prepare three freeze frames or annotated scene sketches and comparison prompts.</li><li><b>Themes & Motifs:</b> make four stations on colorism, passing, family, reinvention or other evidenced motifs. Each needs a scene, a character, a symbol/motif and a question. Let visitors judge which themes are central.</li></ol><p>Use only material available in Part One. Every interpretation needs a page reference or an identifiable scene.</p></div><div class=\"reading-card\"><h3>Assessment · 100 points</h3><p>Content accuracy & depth: <b>40</b> · Presentation quality: <b>25</b> · Textual evidence: <b>20</b> · Visual/creative execution: <b>15</b>. Use the detailed Edumap rubric in Materials. The teacher sets any contribution to the course grade.</p></div>"
+        "html": "<div class=\"reading-card\"><h3>Four projects from the Edumap</h3><ol><li><b>Places & Power:</b> map Mallard, the Dupont household, Opelousas, New Orleans, D.C., The Surly Goat and Maison Blanche where supported by Part One. Select three “power stations”, each with a scene, a two-line explanation and a discussion question.</li><li><b>Family Lines & Fault Lines:</b> build a timeline from Alphonse Decuir through Leon and Adele to the twins and Jude. Identify three transmissions of trauma and one possible break in a pattern. Prepare four counterfactual questions; distinguish speculation from text evidence.</li><li><b>Identity Under Pressure:</b> compare Desiree, Stella and Jude in a character triangle: traits, pressure, conflict, turning point. Prepare three freeze frames or annotated scene sketches and comparison prompts.</li><li><b>Themes & Motifs:</b> make four stations on colorism, passing, family, reinvention or other evidenced motifs. Each needs a scene, a character, a symbol/motif and a question. Let visitors judge which themes are central.</li></ol><p>Use only material available in Part One. Every interpretation needs a page reference or an identifiable scene.</p></div><div class=\"reading-card\"><h3>Assessment · 100 points</h3><p>Content accuracy & depth: <b>40</b> · Presentation quality: <b>25</b> · Textual evidence: <b>20</b> · Visual/creative execution: <b>15</b>. Use the detailed Edumap rubric in Materials. The teacher sets any contribution to the course grade.</p></div><figure class=\"lesson-figure\"><a href=\"vanishing-half.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"vanishing-half.jpg\" alt=\"The Vanishing Half cover\"></a><figcaption>Brit Bennett · book cover via Seattle Public Library · click to enlarge</figcaption></figure>"
       },
       {
         "tab": "Present & synthesise",
@@ -1149,8 +1531,49 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ]
+      },
+      {
+        "tab": "Plenary",
+        "title": "What we agree on",
+        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "plenary": true,
+        "fields": [
+          [
+            "class_claims",
+            "Our agreed key findings",
+            "Record 3–5 conclusions agreed by the class.",
+            "long"
+          ],
+          [
+            "class_evidence",
+            "Our evidence and connections",
+            "Project finding | Part One passage/page | historical connection",
+            "long"
+          ],
+          [
+            "class_synthesis",
+            "Our shared answer",
+            "How do place, family and history constrain or enable self-definition?",
+            "long"
+          ],
+          [
+            "class_questions",
+            "Still open / next step",
+            "Record disagreements, corrections or questions to return to."
+          ]
+        ]
       }
     ],
-    "teaching": "W5 DS1 (Std. 21–22): 15 Min. Leseabgleich, 25 Min. Erstreaktionen, 30 Min. Geschichtsverknüpfung, 20 Min. kurze Gruppenerklärungen. W5 DS2 (Std. 23–24): 10 Min. Projektplanung, 45 Min. Gruppenarbeit, 25 Min. Gestaltung/Interaktion, 10 Min. Probe. W5 Einzelstunde (Std. 25): 4 × 8 Min. interaktive Präsentation, 8 Min. Feedback, 5 Min. Schlussreflexion. Individuelle Synthese als abschließende Hausaufgabe. Edumap: Part-One-Aufträge, vier Projektgruppen und 100-BE-Raster; frühere Namen, Termine und Benotungsanteile entfernt. Vorhersage zur späteren Begegnung zweier Figuren durch spoilerfreie Frage ersetzt."
+    "teaching": "W5 DS1 (Std. 21–22): 15 Min. Leseabgleich, 25 Min. Erstreaktionen, 30 Min. Geschichtsverknüpfung, 20 Min. kurze Gruppenerklärungen. W5 DS2 (Std. 23–24): 10 Min. Projektplanung, 45 Min. Gruppenarbeit, 25 Min. Gestaltung/Interaktion, 10 Min. Probe. W5 Einzelstunde (Std. 25): 4 × 8 Min. interaktive Präsentation, 8 Min. Feedback, 5 Min. Schlussreflexion. Individuelle Synthese als abschließende Hausaufgabe. Edumap: Part-One-Aufträge, vier Projektgruppen und 100-BE-Raster; frühere Namen, Termine und Benotungsanteile entfernt. Vorhersage zur späteren Begegnung zweier Figuren durch spoilerfreie Frage ersetzt. Plenumssicherung: Gallery synthesis and exit consensus (12 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "consolidation": {
+      "method": "Gallery synthesis and exit consensus",
+      "duration": "12 minutes",
+      "steps": [
+        "Each project nominates its strongest text-based finding (4 min).",
+        "Connect the four findings under place, family, identity and power (3 min).",
+        "Agree on a comparative thesis linking Part One and the film (3 min).",
+        "Everyone offers one correction or unanswered question; confirm the final record (2 min)."
+      ]
+    }
   }
 ];
