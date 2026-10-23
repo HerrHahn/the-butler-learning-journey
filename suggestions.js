@@ -10,7 +10,7 @@
  <p>Was fehlt, ist unklar oder funktioniert nicht?</p><p class="suggestion-context"></p>
  <label for="suggestion-text">Dein Verbesserungsvorschlag</label><textarea id="suggestion-text" rows="7" maxlength="2000" required placeholder="Hier kannst du deine Idee oder ein Problem beschreiben …" aria-describedby="suggestion-count suggestion-privacy"></textarea>
  <small id="suggestion-count">0 / 2.000 Zeichen</small><p class="suggestion-pencil">Apple Pencil: Bei aktiviertem „Kritzeln“ direkt in dieses Textfeld schreiben.</p>
- <p id="suggestion-privacy" class="suggestion-privacy">Bitte keine Namen oder persönlichen Daten eintragen. Nur dein Text, Kapitel/Lernschritt und der Zeitpunkt werden in der geschützten Sammlung deiner Lehrkraft bei Cloudflare gespeichert. Keine Weitergabe an eine KI. Ohne Anmeldung oder Code. Zum Schutz vor Spam höchstens fünf Vorschläge pro Browser und Tag (deutsche Zeit).</p>
+ <p id="suggestion-privacy" class="suggestion-privacy">Bitte keine Namen oder persönlichen Daten eintragen. Nur dein Text, Kapitel/Lernschritt und der Zeitpunkt werden in der geschützten Sammlung deiner Lehrkraft bei Cloudflare gespeichert. Keine Weitergabe an eine KI. Ohne Anmeldung oder Code. Du kannst jederzeit weitere Vorschläge senden.</p>
  <button type="submit" class="suggestion-send">Vorschlag senden</button><p class="suggestion-status" role="status" aria-live="polite"></p><p class="suggestion-draft-status"></p>
  <a class="suggestion-teacher" href="suggestions-teacher.html" target="_blank" rel="noopener">Für die Lehrkraft: Sammlung herunterladen ↗</a></form>`;
  document.body.append(launch,dialog);
