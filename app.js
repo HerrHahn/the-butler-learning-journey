@@ -41,6 +41,7 @@ function renderChapter(c){
   $('#companion').innerHTML=`<div class="aside-heading">YOUR COMPANION <span>✦</span></div><section><span class="eyebrow">THE BIG QUESTION</span><h2>${esc(c.question)}</h2></section><details open><summary>Materials</summary><div class="material-links">${materialLinks(c)}</div></details><details open><summary>Language toolkit</summary><dl>${c.toolkit.map(t=>`<dt>${esc(t[0])}</dt><dd>${esc(t[1])}</dd>`).join('')}</dl></details><details><summary>Useful phrases</summary><p>${esc(c.phrases)}</p></details><section class="note"><label for="notes">My pocket notes</label><textarea id="notes" maxlength="100000" placeholder="A thought, a question, a useful word…">${esc(data.notes)}</textarea><small>Included in your work file and PDF.</small></section>`;
   renderReferences(c);
   if(stage.plenary)bindPlenary(c);
+  window.ButlerWritingFeedback?.mount(c.id);
   $('#notes').oninput=e=>{data.notes=e.target.value;save()};
 }
 function renderTeacher(){
