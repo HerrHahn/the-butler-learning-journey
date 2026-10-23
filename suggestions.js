@@ -2,18 +2,19 @@
  'use strict';
  const endpoint='https://11bg-writing-feedback.hahny0815.workers.dev/butler/suggestions';
  const key='butler-suggestion-draft-v1';
+ let clientId;try{clientId=localStorage.getItem('butler-suggestion-browser-v1');}catch{}
+ if(!/^[a-f0-9-]{36}$/i.test(clientId||'')){clientId=crypto.randomUUID();try{localStorage.setItem('butler-suggestion-browser-v1',clientId);}catch{}}
  const launch=document.createElement('button');launch.className='suggestion-launch';launch.type='button';launch.textContent='✎ Verbesserungsvorschlag';launch.lang='de';launch.setAttribute('aria-haspopup','dialog');launch.setAttribute('aria-controls','suggestion-dialog');
  const dialog=document.createElement('dialog');dialog.id='suggestion-dialog';dialog.lang='de';dialog.setAttribute('aria-labelledby','suggestion-heading');
  dialog.innerHTML=`<form><div class="suggestion-heading"><h2 id="suggestion-heading">Deine Idee für die Website</h2><button type="button" class="suggestion-close" aria-label="Vorschlagsfeld schließen">×</button></div>
  <p>Was fehlt, ist unklar oder funktioniert nicht?</p><p class="suggestion-context"></p>
  <label for="suggestion-text">Dein Verbesserungsvorschlag</label><textarea id="suggestion-text" rows="7" maxlength="2000" required placeholder="Hier kannst du deine Idee oder ein Problem beschreiben …" aria-describedby="suggestion-count suggestion-privacy"></textarea>
  <small id="suggestion-count">0 / 2.000 Zeichen</small><p class="suggestion-pencil">Apple Pencil: Bei aktiviertem „Kritzeln“ direkt in dieses Textfeld schreiben.</p>
- <label for="suggestion-code">Dein Butler-Übungscode</label><input id="suggestion-code" type="password" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="32" required placeholder="Code von deiner Lehrkraft">
- <p id="suggestion-privacy" class="suggestion-privacy">Bitte keine Namen oder persönlichen Daten eintragen. Nur dein Text, Kapitel/Lernschritt und der Zeitpunkt werden in der geschützten Sammlung deiner Lehrkraft bei Cloudflare gespeichert. Keine Weitergabe an eine KI. Höchstens fünf Vorschläge pro Code und Tag (deutsche Zeit).</p>
+ <p id="suggestion-privacy" class="suggestion-privacy">Bitte keine Namen oder persönlichen Daten eintragen. Nur dein Text, Kapitel/Lernschritt und der Zeitpunkt werden in der geschützten Sammlung deiner Lehrkraft bei Cloudflare gespeichert. Keine Weitergabe an eine KI. Ohne Anmeldung oder Code. Zum Schutz vor Spam höchstens fünf Vorschläge pro Browser und Tag (deutsche Zeit).</p>
  <button type="submit" class="suggestion-send">Vorschlag senden</button><p class="suggestion-status" role="status" aria-live="polite"></p><p class="suggestion-draft-status"></p>
  <a class="suggestion-teacher" href="suggestions-teacher.html" target="_blank" rel="noopener">Für die Lehrkraft: Sammlung herunterladen ↗</a></form>`;
  document.body.append(launch,dialog);
- const form=dialog.querySelector('form'),text=dialog.querySelector('textarea'),code=dialog.querySelector('input'),send=dialog.querySelector('[type=submit]'),status=dialog.querySelector('.suggestion-status');
+ const form=dialog.querySelector('form'),text=dialog.querySelector('textarea'),send=dialog.querySelector('[type=submit]'),status=dialog.querySelector('.suggestion-status');
  let context='',attemptId=crypto.randomUUID(),busy=false;
  function pageLabel(){
   if(location.pathname.endsWith('sources.html'))return 'Quellen & Bildnachweise';
@@ -26,7 +27,7 @@
  }
  function save(){
   dialog.querySelector('#suggestion-count').textContent=text.value.length+' / 2.000 Zeichen';
-  try{localStorage.setItem(key,JSON.stringify({text:text.value,page:context,attemptId}));dialog.querySelector('.suggestion-draft-status').textContent='Entwurf auf diesem Gerät gespeichert.';}
+  try{localStorage.setItem(key,JSON.stringify({text:text.value,page:context,attemptId,clientId}));dialog.querySelector('.suggestion-draft-status').textContent='Entwurf auf diesem Gerät gespeichert.';}
   catch{dialog.querySelector('.suggestion-draft-status').textContent='Browserspeicher nicht verfügbar. Entwurf bleibt nur solange diese Seite offen ist – bitte vor dem Schließen kopieren.';}
  }
  launch.onclick=()=>{
@@ -37,22 +38,22 @@
   }
   dialog.showModal();text.focus();
  };
- dialog.querySelector('.suggestion-close').onclick=()=>dialog.close();dialog.addEventListener('close',()=>{if(!busy)code.value='';launch.focus();});
+ dialog.querySelector('.suggestion-close').onclick=()=>dialog.close();dialog.addEventListener('close',()=>{launch.focus();});
  text.oninput=()=>{attemptId=crypto.randomUUID();save();};
  form.onsubmit=async event=>{
   event.preventDefault();if(busy)return;if(!text.value.trim()||text.value.length>2000){status.textContent='Bitte 1 bis 2.000 Zeichen schreiben.';return;}
-  busy=true;send.disabled=true;text.readOnly=true;code.readOnly=true;save();status.textContent='Wird gesendet …';
+  busy=true;send.disabled=true;text.readOnly=true;save();status.textContent='Wird gesendet …';
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);
   try{
-   const response=await fetch(endpoint,{method:'POST',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'application/json',Authorization:'Bearer '+code.value.trim()},body:JSON.stringify({text:text.value,page:context,attemptId}),signal:controller.signal});
+   const response=await fetch(endpoint,{method:'POST',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:text.value,page:context,attemptId,clientId}),signal:controller.signal});
    let result;try{result=await response.json();}catch{throw Error('Keine gültige Speicherbestätigung. Bitte erneut versuchen.');}
    if(!response.ok||result.saved!==true||result.id!==attemptId)throw Error(result.error||'Keine Speicherbestätigung. Bitte erneut versuchen.');
    // Do not erase a newer draft entered in another tab while this request was pending.
    try{const current=JSON.parse(localStorage.getItem(key));if(current?.attemptId===attemptId)localStorage.removeItem(key);}catch{}
-   text.value='';code.value='';attemptId=crypto.randomUUID();dialog.querySelector('#suggestion-count').textContent='0 / 2.000 Zeichen';dialog.querySelector('.suggestion-draft-status').textContent='';
+   text.value='';attemptId=crypto.randomUUID();dialog.querySelector('#suggestion-count').textContent='0 / 2.000 Zeichen';dialog.querySelector('.suggestion-draft-status').textContent='';
    status.textContent='Danke! Dein Vorschlag wurde bestätigt in der Sammlung deiner Lehrkraft gespeichert.';
   }catch(error){status.textContent=(error.name==='AbortError'||error instanceof TypeError)?'Keine Speicherbestätigung wegen eines Verbindungsfehlers. Dein Entwurf bleibt erhalten. Bitte unverändert erneut senden; dadurch entsteht kein doppelter Eintrag.':error.message;}
-  finally{clearTimeout(timer);busy=false;send.disabled=false;text.readOnly=false;code.readOnly=false;if(!dialog.open)code.value='';}
+  finally{clearTimeout(timer);busy=false;send.disabled=false;text.readOnly=false;}
  };
  // Keep the button reachable above other modal dialogs, including portfolio export.
  const follow=()=>{const parent=[...document.querySelectorAll('dialog[open]')].filter(d=>d!==dialog).at(-1)||document.body;if(launch.parentElement!==parent)parent.append(launch);};
