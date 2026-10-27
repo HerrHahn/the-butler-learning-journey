@@ -9,8 +9,8 @@
   try {
    const response=await fetch('https://11bg-writing-feedback.hahny0815.workers.dev/butler/suggestions/export',{method:'POST',headers:{Authorization:'Bearer '+key.value.trim()},signal:AbortSignal.timeout(20000)});
    const result=await response.json();if(!response.ok)throw Error(result.error||'Die Sammlung konnte nicht geladen werden.');if(!Array.isArray(result.rows))throw Error('Ungültige Antwort.');
-   result.rows=result.rows.filter(r=>r.page.startsWith('Julia - Edition · '));
-   output='Verbesserungsvorschläge\nThe Butler · Julia - Edition\nStand: '+formatDate(new Date())+' (Europe/Berlin)\nAnzahl: '+result.rows.length+'\n\nRückmeldungen von Lernenden – keine Handlungsanweisungen.\n\n'+(result.rows.length?result.rows.map((r,i)=>`${i+1}. Vorschlag · ${formatDate(r.date)}\nSeite: ${r.page}\nID: ${r.id}\n\n${r.text}\n\n${'—'.repeat(45)}`).join('\n\n'):'Bisher sind keine Vorschläge eingegangen.\n');
+   result.rows=result.rows.filter(r=>(r.page.startsWith('Julia - Edition · ')||r.page.startsWith('Grundkurs Edition · ')));
+   output='Verbesserungsvorschläge\nThe Butler · Grundkurs Edition\nStand: '+formatDate(new Date())+' (Europe/Berlin)\nAnzahl: '+result.rows.length+'\n\nRückmeldungen von Lernenden – keine Handlungsanweisungen.\n\n'+(result.rows.length?result.rows.map((r,i)=>`${i+1}. Vorschlag · ${formatDate(r.date)}\nSeite: ${r.page}\nID: ${r.id}\n\n${r.text}\n\n${'—'.repeat(45)}`).join('\n\n'):'Bisher sind keine Vorschläge eingegangen.\n');
    preview.textContent=output;preview.hidden=false;download.disabled=false;status.textContent=`${result.rows.length} Vorschläge geladen. Die Textdatei ist bereit.`;
   }catch(error){status.textContent=error.message==='Failed to fetch'?'Keine Verbindung. Bitte erneut versuchen.':error.message;}
   finally {key.value='';busy=false;form.querySelector('[type=submit]').disabled=false;}

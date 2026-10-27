@@ -16,7 +16,7 @@
  document.body.append(launch,dialog);
  const form=dialog.querySelector('form'),text=dialog.querySelector('textarea'),send=dialog.querySelector('[type=submit]'),status=dialog.querySelector('.suggestion-status');
  let context='',attemptId=crypto.randomUUID(),busy=false;
- function pageLabel(){return ('Julia - Edition · '+originalPageLabel()).slice(0,240);}
+ function pageLabel(){return ('Grundkurs Edition · '+originalPageLabel()).slice(0,240);}
  function originalPageLabel(){
   if(location.pathname.endsWith('sources.html'))return 'Quellen & Bildnachweise';
   if(location.pathname.endsWith('suggestions-teacher.html'))return 'Lehrkraft: Vorschlagssammlung';

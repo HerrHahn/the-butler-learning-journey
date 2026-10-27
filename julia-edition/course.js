@@ -939,12 +939,12 @@ const COURSE = [
       {
         "tab": "Write",
         "title": "Analyse the construction of conflict",
-        "text": "Write an analytical paragraph or short essay. Explain how the film presents service and direct action through characterisation and at least two film techniques.",
+        "text": "Write a short analysis of about 150–200 words. Compare Cecil’s and Louis’s approaches to change. Use a concrete scene and explain the effect of at least one film technique. Use a clear point, evidence and explanation.",
         "fields": [
           [
             "analysis",
             "My film analysis",
-            "Claim → scene evidence → technique → effect → connection to the central argument. About 250–350 words.",
+            "150–200 words. My point is… / In the scene… / This suggests… / The use of… helps the viewer understand…",
             "long"
           ]
         ],
@@ -1073,12 +1073,12 @@ const COURSE = [
       {
         "tab": "Write",
         "title": "Louis writes an open letter",
-        "text": "Take Louis’s perspective after Obama’s election. Write an open letter to The Washington Post reflecting on the long struggle for equality, personal experience and hopes for the future. Use the film and researched history; do not give him knowledge of events after the letter’s date.",
+        "text": "Write an open letter of about 200–250 words as Louis to The Washington Post after Obama’s election in November 2008. Describe one relevant personal experience, explain what has changed and what still needs to change, and finish with a clear appeal.",
         "fields": [
           [
             "letter",
             "My open letter",
-            "About 350–450 words. Establish audience and purpose, develop examples, end with a clear appeal.",
+            "200–250 words. Dear Editor,… / From my experience,… / Although… / I hope… / I call on…",
             "long"
           ],
           [
@@ -1274,7 +1274,7 @@ const COURSE = [
       {
         "tab": "Prepare",
         "title": "Arrive with evidence",
-        "text": "Bring two significant passages, one unresolved question and one historical connection to the next lesson. Prepare an initial summary of Part One in your own words.",
+        "text": "Bring two significant passages and one question to the next lesson. Prepare an initial summary of Part One in 100–150 words. Focus on the main events and characters, use your own words and the present tense, and leave out your opinion.",
         "fields": [
           [
             "passages",
@@ -1284,7 +1284,7 @@ const COURSE = [
           [
             "summary",
             "My initial summary",
-            "About 150–200 words; distinguish narrative order from chronology.",
+            "100–150 words. Focus on the main events and characters of Part One. Use your own words and the present tense; do not include your opinion.",
             "long"
           ]
         ],

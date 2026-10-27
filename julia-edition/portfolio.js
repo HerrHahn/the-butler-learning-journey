@@ -4,7 +4,7 @@
   function blank(course){return {profile:{name:'',group:''},active:'overview',step:0,chapters:Object.fromEntries(course.map(c=>[c.id,{answers:{},notes:'',checks:[false,false,false],feedback:''}]))};}
   function text(value,label,max=MAX_TEXT){if(typeof value!=='string'||value.length>max)throw new Error('Ungültiges Textfeld: '+label);return value;}
   function validate(file,course){
-    if(!file||file.type!==TYPE||file.version!==VERSION||!file.work)throw new Error('Diese Datei ist kein unterstützter Julia-Edition-Arbeitsstand. Bitte eine .butler.json-Datei auswählen; PDFs lassen sich nicht als Arbeitsstand laden.');
+    if(!file||file.type!==TYPE||file.version!==VERSION||!file.work)throw new Error('Diese Datei ist kein unterstützter Grundkurs-Arbeitsstand. Bitte eine .butler.json-Datei auswählen; PDFs lassen sich nicht als Arbeitsstand laden.');
     const raw=file.work,out=blank(course);
     if(!raw.profile||!raw.chapters||typeof raw.chapters!=='object'||Array.isArray(raw.chapters))throw new Error('Die Projektdatei ist unvollständig.');
     out.profile={name:text(raw.profile.name,'Name',200),group:text(raw.profile.group,'Klasse',100)};
@@ -40,7 +40,7 @@
       for(const line of lines){if(y+gap>bottom)newPage();doc.text(line,22,y);y+=gap;}
       y+=3;
     }
-    lineBlock('THE BUTLER',12,[119,37,56],7);lineBlock('Julia – Edition',24,[73,24,37],11);
+    lineBlock('THE BUTLER',12,[119,37,56],7);lineBlock('Grundkurs Edition',24,[73,24,37],11);
     lineBlock(summaryOnly?'Class consolidation · English Year 12 Grundkurs':'Learning portfolio · English Year 12 Grundkurs',11,[85,104,116],6);
     if(!summaryOnly)lineBlock(`Name: ${work.profile.name||'—'}    Class: ${work.profile.group||'—'}`,11);
     lineBlock(`Exported: ${new Date().toLocaleString('de-DE')}`,9,[85,104,116],5);
@@ -50,7 +50,7 @@
       lineBlock(section.title,19,[73,24,37],9);lineBlock(section.meta,9,[85,104,116],5);
       for(const b of section.blocks){if(y+22>bottom)newPage();lineBlock(b.label,12,[119,37,56],6.5);lineBlock(b.text);y+=3;}
     });
-    const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);doc.setDrawColor(209,219,224);doc.line(22,281,188,281);doc.setFontSize(9);doc.setTextColor(99,119,130);doc.text('THE BUTLER · Julia – Edition',22,288);doc.text(`${n} / ${total}`,188,288,{align:'right'});}
+    const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);doc.setDrawColor(209,219,224);doc.line(22,281,188,281);doc.setFontSize(9);doc.setTextColor(99,119,130);doc.text('THE BUTLER · Grundkurs Edition',22,288);doc.text(`${n} / ${total}`,188,288,{align:'right'});}
     return doc;
   }
   root.Portfolio={blank,validate,wrap,exportSections,makePdf,TYPE,VERSION};
