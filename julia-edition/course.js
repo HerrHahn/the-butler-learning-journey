@@ -209,7 +209,8 @@ const COURSE = [
           ]
         ],
         "html": "<div class=\"reading-card\"><h3>Research support</h3><p>Divide the reading with a partner. Use headings and short bullet points. For each source, record its title, institution and URL. Ask: What can this source tell us? What does it not explain?</p></div>",
-        "number": 2
+        "number": 2,
+        "ai": "green"
       },
       {
         "tab": "Plenary",
@@ -343,7 +344,10 @@ const COURSE = [
             "long"
           ]
         ],
-        "number": 3
+        "number": 3,
+        "aiFields": {
+          "paragraph": "amber"
+        }
       },
       {
         "tab": "Plenary",
@@ -464,7 +468,8 @@ const COURSE = [
           ]
         ],
         "html": "<figure class=\"lesson-figure\"><a href=\"civil-rights.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"civil-rights.jpg\" alt=\"Civil rights demonstrators confronted by police\"></a><figcaption>Historical image from the supplied slides · distinguish protest from the laws being challenged · click to enlarge</figcaption></figure>",
-        "number": 2
+        "number": 2,
+        "ai": "green"
       },
       {
         "tab": "Discuss",
@@ -585,7 +590,8 @@ const COURSE = [
           ]
         ],
         "html": "<div class=\"reading-card\"><h3>Five groups · five topics</h3><ol><li><b>Great Migration and Harlem Renaissance</b><br>Why did people leave the South? How did migration contribute to cultural change?</li><li><b>Ku Klux Klan</b><br>What were its aims and methods? How did people and institutions respond?</li><li><b>Racial violence: lynching and riots</b><br>Choose two documented examples. Explain perpetrators, victims, consequences and resistance. Check whether “riot” accurately describes each event.</li><li><b>Freedom Rides and civil disobedience (Rosa Parks)</b><br>Distinguish Parks’ action and the Montgomery Bus Boycott from the later Freedom Rides. Compare their aims and nonviolent methods.</li><li><b>Ideologies and leaders of the Civil Rights Movement</b><br>The Black Panther Party, Martin Luther King Jr., Booker T. Washington, W. E. B. Du Bois and Marcus Garvey.<br>Divide these five profiles among group members. For each: period, goal, method and one example. Place them on a timeline: they did not all act in the same period. Compare two approaches in more detail.</li></ol><p><b>Your product:</b> a presentation of about 5 minutes, a poster and five questions for your audience. Keep your poster visible while watching <i>The Butler</i>.</p></div><figure class=\"lesson-figure\"><a href=\"harlem.jpeg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"harlem.jpeg\" alt=\"Historical street parade in Harlem\"></a><figcaption>Historical photograph from the supplied PowerPoint; original photographer not specified · click to enlarge</figcaption></figure>",
-        "number": 1
+        "number": 1,
+        "ai": "green"
       },
       {
         "tab": "Research",
@@ -605,7 +611,8 @@ const COURSE = [
           ]
         ],
         "html": "<div class=\"reading-card\"><p>For racial violence and the Klan, explain perpetrators, structures and resistance without displaying graphic images or reproducing propaganda as decoration. Use precise language and centre the people affected.</p></div><div class=\"reading-card\"><h3>Useful starting points</h3><ul><li><a href=\"https://home.nps.gov/articles/000/harlem.htm\" target=\"_blank\" rel=\"noopener\">NPS: Harlem and migration</a></li><li><a href=\"https://www.nps.gov/articles/kukluxklan.htm\" target=\"_blank\" rel=\"noopener\">NPS: Ku Klux Klan</a></li><li><a href=\"https://www.nps.gov/articles/reconstruction.htm\" target=\"_blank\" rel=\"noopener\">NPS: Reconstruction and racial violence</a></li><li><a href=\"https://www.nps.gov/people/rosa-parks.htm\" target=\"_blank\" rel=\"noopener\">NPS: Rosa Parks</a> · <a href=\"https://www.nps.gov/frri/index.htm\" target=\"_blank\" rel=\"noopener\">Freedom Riders National Monument</a></li><li><a href=\"https://nmaahc.si.edu/\" target=\"_blank\" rel=\"noopener\">Smithsonian NMAAHC: search the names in your group topic</a></li></ul></div>",
-        "number": 2
+        "number": 2,
+        "ai": "green"
       },
       {
         "tab": "Prepare",
@@ -934,7 +941,8 @@ const COURSE = [
           ]
         ],
         "html": "<figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"freedom-rides.jpg\" alt=\"Photograph of a burning Freedom Riders bus\"><figcaption>Historical photograph used in the supplied slides, slide 40. Check its context against the National Park Service source.</figcaption></figure>",
-        "number": 2
+        "number": 2,
+        "ai": "green"
       },
       {
         "tab": "Write",
@@ -948,7 +956,10 @@ const COURSE = [
             "long"
           ]
         ],
-        "number": 3
+        "number": 3,
+        "aiFields": {
+          "analysis": "amber"
+        }
       },
       {
         "tab": "Revise",
@@ -1087,7 +1098,10 @@ const COURSE = [
             "Comment on structure, evidence, register and language. Record two strengths and one revision."
           ]
         ],
-        "number": 2
+        "number": 2,
+        "aiFields": {
+          "letter": "amber"
+        }
       },
       {
         "tab": "Read & listen",
@@ -1293,7 +1307,10 @@ const COURSE = [
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
         ],
-        "number": 4
+        "number": 4,
+        "aiFields": {
+          "summary": "amber"
+        }
       },
       {
         "tab": "Plenary",
@@ -1401,7 +1418,13 @@ const COURSE = [
           ]
         ],
         "html": "<div class=\"reading-card\"><h3>First reactions · choose two per box</h3><p><b>Personal:</b> What was your first emotional reaction? Which scene stayed with you? What surprised or confused you?</p><p><b>Characters:</b> How do you respond to Stella’s decision to pass? Which twin feels closer to you, and why? Do you trust Early Jones?</p><p><b>Themes:</b> What is your impression of Mallard? How did your understanding of colorism change? Which issue seems relevant today?</p><p><b>Structure:</b> How does the opening establish tone? How do shifts in perspective affect your reading? What does the title suggest?</p><p><b>Prediction, Part One only:</b> Will Stella return? Which secret or conflict could matter later? Which relationship might change?</p></div>",
-        "number": 1
+        "number": 1,
+        "aiFields": {
+          "summary-check": {
+            "level": "amber",
+            "detail": "Only after reading Part One: you may request an AI summary of Part One, then check and correct it against your book. Do not use it as textual evidence."
+          }
+        }
       },
       {
         "tab": "Context",
@@ -1420,7 +1443,7 @@ const COURSE = [
             "Write 4–5 sentences for each of two themes. Explain what history clarifies and what remains specific to the novel."
           ]
         ],
-        "html": "<div class=\"reading-card\"><p>Prepare a 3–5 minute explanation and one discussion question. For example: how does knowledge of segregation change your reading of a character’s choices? Historical context illuminates fiction; a character does not represent everyone in a group.</p></div>",
+        "html": "<div class=\"ai-rule ai-rule-green\"><strong>GREEN · Historical research</strong><p>You may use AI freely to research the historical context. This permission applies to research; it does not automatically include your literary interpretation.</p></div><div class=\"reading-card\"><p>Prepare a 3–5 minute explanation and one discussion question. For example: how does knowledge of segregation change your reading of a character’s choices? Historical context illuminates fiction; a character does not represent everyone in a group.</p></div>",
         "number": 2
       },
       {

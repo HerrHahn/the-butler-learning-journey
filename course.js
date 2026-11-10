@@ -228,7 +228,8 @@ const COURSE = [
             "For each source: author/institution, title, date, URL, one useful finding and one limitation."
           ]
         ],
-        "html": "<div class=\"reading-card\"><p><b>Source check:</b> use at least two sources, including one historical document or testimony. A plantation owner’s record, a later interview and a film offer different kinds of evidence. Compare their perspectives.</p></div>"
+        "html": "<div class=\"reading-card\"><p><b>Source check:</b> use at least two sources, including one historical document or testimony. A plantation owner’s record, a later interview and a film offer different kinds of evidence. Compare their perspectives.</p></div>",
+        "ai": "green"
       },
       {
         "tab": "Read",
@@ -400,7 +401,10 @@ const COURSE = [
             "Avoid retelling only. Explain how a technique shapes meaning.",
             "long"
           ]
-        ]
+        ],
+        "aiFields": {
+          "paragraph": "amber"
+        }
       },
       {
         "tab": "Transfer",
@@ -417,7 +421,8 @@ const COURSE = [
           "I support my claims with specific evidence.",
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
-        ]
+        ],
+        "html": "<div class=\"ai-rule ai-rule-green\"><strong>GREEN · Optional additional research</strong><p>AI may be used freely to research another representation of slavery. This label applies to research, not automatically to the scene comparison.</p></div>"
       },
       {
         "tab": "Plenary",
@@ -535,7 +540,8 @@ const COURSE = [
             "Identify two responses by Black communities and the risks involved."
           ]
         ],
-        "html": "<figure class=\"lesson-figure\"><a href=\"civil-rights.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"civil-rights.jpg\" alt=\"Civil rights demonstrators confronted by police\"></a><figcaption>Historical image from the supplied slides · distinguish protest from the laws being challenged · click to enlarge</figcaption></figure>"
+        "html": "<figure class=\"lesson-figure\"><a href=\"civil-rights.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"civil-rights.jpg\" alt=\"Civil rights demonstrators confronted by police\"></a><figcaption>Historical image from the supplied slides · distinguish protest from the laws being challenged · click to enlarge</figcaption></figure>",
+        "ai": "green"
       },
       {
         "tab": "Discuss",
@@ -671,7 +677,8 @@ const COURSE = [
             "Who investigates context, evidence, visuals, argument and audience questions?"
           ]
         ],
-        "html": "<div class=\"reading-card\"><h3>Six groups · six topics</h3><ol><li>The Harlem Renaissance</li><li>The Great Migration to the North</li><li>The Ku Klux Klan</li><li>Racial violence: lynchings and riots</li><li>Booker T. Washington and W. E. B. Du Bois</li><li>Marcus Garvey</li></ol><p><b>Your product:</b> a presentation of about 5 minutes, a poster and a handout with five questions for your audience. Display the posters while working on <i>The Butler</i>.</p></div><figure class=\"lesson-figure\"><a href=\"harlem.jpeg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"harlem.jpeg\" alt=\"Historical street parade in Harlem\"></a><figcaption>Historical photograph from the supplied PowerPoint; original photographer not specified · click to enlarge</figcaption></figure>"
+        "html": "<div class=\"reading-card\"><h3>Six groups · six topics</h3><ol><li>The Harlem Renaissance</li><li>The Great Migration to the North</li><li>The Ku Klux Klan</li><li>Racial violence: lynchings and riots</li><li>Booker T. Washington and W. E. B. Du Bois</li><li>Marcus Garvey</li></ol><p><b>Your product:</b> a presentation of about 5 minutes, a poster and a handout with five questions for your audience. Display the posters while working on <i>The Butler</i>.</p></div><figure class=\"lesson-figure\"><a href=\"harlem.jpeg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"harlem.jpeg\" alt=\"Historical street parade in Harlem\"></a><figcaption>Historical photograph from the supplied PowerPoint; original photographer not specified · click to enlarge</figcaption></figure>",
+        "ai": "green"
       },
       {
         "tab": "Research",
@@ -690,7 +697,8 @@ const COURSE = [
             "Author/institution; title; date; URL; evidence; limitation"
           ]
         ],
-        "html": "<div class=\"reading-card\"><p>For racial violence and the Klan, explain perpetrators, structures and resistance without displaying graphic images or reproducing propaganda as decoration. Use precise language and centre the people affected.</p></div>"
+        "html": "<div class=\"reading-card\"><p>For racial violence and the Klan, explain perpetrators, structures and resistance without displaying graphic images or reproducing propaganda as decoration. Use precise language and centre the people affected.</p></div>",
+        "ai": "green"
       },
       {
         "tab": "Prepare",
@@ -1029,12 +1037,12 @@ const COURSE = [
       {
         "tab": "Context",
         "title": "King and Malcolm X: two research groups",
-        "text": "Divide the class into two groups. Group A researches Dr. Martin Luther King Jr.; Group B researches Malcolm X. Investigate your leader’s life, goals, methods, actions, and impact. Use the two linked starting sources for your group, record evidence, and prepare to teach the other group.",
+        "text": "Independent lesson: November 11, 2026. Your teacher is absent. Work through the three tasks below, follow the AI traffic lights, and upload your individual PDF to the IServ assignment before the end of the lesson.",
         "fields": [
           [
             "leader_profile",
             "Our group’s research profile",
-            "Group A / King or Group B / Malcolm X\nLife: three turning points\nGoals and methods\nTwo actions or examples and their impact\nStrength, limitation, or criticism\nSources: institution, title, URL, and evidence",
+            "Group A / King or Group B / Malcolm X\nLife: three turning points\nGoals and methods\nTwo actions or examples and their impact\nStrength, limitation, or criticism\nSources: institution, title, URL, and evidence\nAI use: tool and purpose, or “No AI used.”",
             "long"
           ],
           [
@@ -1052,10 +1060,17 @@ const COURSE = [
           [
             "context",
             "Historical context",
-            "Aim; event; relevance to Louis; source"
+            "Later extension, not required for the independent lesson. Research the aim, event, relevance to Louis, and source."
           ]
         ],
-        "html": "<div class=\"reading-card\"><h3>Group A · Dr. Martin Luther King Jr.</h3><p><b>Group members:</b> Philip, Ole, Timon, Louis, Adem, Lennart, Maria, Lana, Lilli.</p><ol><li><b>Life:</b> Identify three important experiences or turning points. Explain how they shaped his beliefs.</li><li><b>Goals and methods:</b> Explain nonviolent direct action, civil disobedience, and interracial cooperation. Why could these methods put pressure on those in power?</li><li><b>Actions and impact:</b> Investigate two campaigns, such as the Montgomery bus boycott, Birmingham, or Selma. Explain what people did, the risks they faced, and the results.</li><li><b>Evaluate:</b> Identify one strength and one limitation or contemporary criticism of his approach. Support your judgment with evidence.</li></ol><p><a href=\"https://kinginstitute.stanford.edu/introduction\" target=\"_blank\" rel=\"noopener\">King’s life and work · Stanford ↗</a><br><a href=\"https://kinginstitute.stanford.edu/nonviolence\" target=\"_blank\" rel=\"noopener\">Nonviolence · Stanford ↗</a></p></div>\n<div class=\"reading-card\"><h3>Group B · Malcolm X</h3><p><b>Group members:</b> Slava, Lativa, Mohammad, Maja, Lea-Marie, Emely, Anni, Stella, Lorena, Vlada, Lea, Julien, Dominik.</p><ol><li><b>Life:</b> Identify three important experiences or turning points, including his time in the Nation of Islam and his changing views in 1964.</li><li><b>Goals and methods:</b> Explain Black self-determination, self-defense, and his criticism of nonviolent integration strategies. Distinguish self-defense from initiating violence.</li><li><b>Actions and impact:</b> Investigate two examples of his speeches, organizing, or international work. Explain his aims, audience, and influence.</li><li><b>Evaluate:</b> Identify one strength and one limitation or contemporary criticism of his approach. Explain how his position developed over time.</li></ol><p><a href=\"https://kinginstitute.stanford.edu/malcolm-x\" target=\"_blank\" rel=\"noopener\">Malcolm X · Stanford ↗</a><br><a href=\"https://home.nps.gov/articles/000/learning-from-malcolm-x.htm\" target=\"_blank\" rel=\"noopener\">Learning from Malcolm X · National Park Service ↗</a></p></div>\n<div class=\"reading-card\"><h3>Exchange · compare · connect</h3><p><b>Research (18 minutes):</b> Divide the work within each group: life, methods, actions, and impact. Agree on a concise profile supported by both sources.</p><p><b>Exchange (8 minutes):</b> Each group has three minutes to explain its findings; use the remaining two minutes for questions. Everyone takes notes on both leaders.</p><p><b>Film transfer (6 minutes):</b> Compare the two approaches. Identify a shared goal, a key disagreement, and a limitation of the comparison. Then connect your findings to two specific scenes involving Cecil and Louis.</p><p><b>Think carefully:</b> King’s nonviolence was active resistance. Malcolm X advocated self-defense, and his views changed. Cecil is not simply “King” and Louis is not simply “Malcolm X”: Louis also practices nonviolent protest. Distinguish Malcolm X’s ideas from the later Black Panther Party, and trace how the film characters change.</p></div>\n<details><summary>Historical bridge: the Freedom Rides</summary><p>Use your research posters and the Freedom Riders source. Identify the aims of the 1961 Freedom Rides and what happened near Anniston on May 14 before riders continued toward Birmingham. Keep history distinct from the film’s reconstruction.</p><figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"freedom-rides.jpg\" alt=\"Photograph of a burning Freedom Riders bus\"><figcaption>Historical photograph used in the supplied slides, slide 40. Check its context against the National Park Service source.</figcaption></figure></details>"
+        "html": "<div class=\"reading-card\"><h3>Group A · Dr. Martin Luther King Jr.</h3><div class=\"ai-rule ai-rule-green\"><strong>GREEN · Research your leader</strong><p>AI may be used freely for this research. Check facts against the linked sources and document your AI use.</p></div><p><b>Group members:</b> Philip, Ole, Timon, Louis, Adem, Lennart, Maria, Lana, Lilli.</p><ol><li><b>Life:</b> Identify three important experiences or turning points. Explain how they shaped his beliefs.</li><li><b>Goals and methods:</b> Explain nonviolent direct action, civil disobedience, and interracial cooperation. Why could these methods put pressure on those in power?</li><li><b>Actions and impact:</b> Investigate two campaigns, such as the Montgomery bus boycott, Birmingham, or Selma. Explain what people did, the risks they faced, and the results.</li><li><b>Evaluate:</b> Identify one strength and one limitation or contemporary criticism of his approach. Support your judgment with evidence.</li></ol><p><a href=\"https://kinginstitute.stanford.edu/introduction\" target=\"_blank\" rel=\"noopener\">King’s life and work · Stanford ↗</a><br><a href=\"https://kinginstitute.stanford.edu/nonviolence\" target=\"_blank\" rel=\"noopener\">Nonviolence · Stanford ↗</a></p></div>\n<div class=\"reading-card\"><h3>Group B · Malcolm X</h3><div class=\"ai-rule ai-rule-green\"><strong>GREEN · Research your leader</strong><p>AI may be used freely for this research. Check facts against the linked sources and document your AI use.</p></div><p><b>Group members:</b> Slava, Lativa, Mohammad, Maja, Lea-Marie, Emely, Anni, Stella, Lorena, Vlada, Lea, Julien, Dominik.</p><ol><li><b>Life:</b> Identify three important experiences or turning points, including his time in the Nation of Islam and his changing views in 1964.</li><li><b>Goals and methods:</b> Explain Black self-determination, self-defense, and his criticism of nonviolent integration strategies. Distinguish self-defense from initiating violence.</li><li><b>Actions and impact:</b> Investigate two examples of his speeches, organizing, or international work. Explain his aims, audience, and influence.</li><li><b>Evaluate:</b> Identify one strength and one limitation or contemporary criticism of his approach. Explain how his position developed over time.</li></ol><p><a href=\"https://kinginstitute.stanford.edu/malcolm-x\" target=\"_blank\" rel=\"noopener\">Malcolm X · Stanford ↗</a><br><a href=\"https://home.nps.gov/articles/000/learning-from-malcolm-x.htm\" target=\"_blank\" rel=\"noopener\">Learning from Malcolm X · National Park Service ↗</a></p></div>\n<section class=\"reading-card\"><h3>1. Research your leader · 17 minutes</h3><div class=\"ai-rule ai-rule-green\"><strong>GREEN · AI allowed</strong><p>You may use AI freely for research, explanations, organization, and drafting your profile. Check facts and sources and understand your final result.</p></div><p>Use the assigned groups above. Divide the research, combine your findings, and make sure every member has the profile. Complete “Our group’s research profile.” Include both sources and a brief note on which AI tool you used and how, or write “No AI used.”</p></section>\n<section class=\"reading-card\"><h3>2. Share and compare · 8 minutes</h3><div class=\"ai-rule ai-rule-red\"><strong>RED · No AI</strong><p>Write your comparison independently. Do not use AI for ideas, wording, translation, or correction.</p></div><p>Show your completed research profile to a partner from the other group and read theirs. No whole-class presentation is needed. Then work individually in “King and Malcolm X: my comparison”: identify one shared goal, one key difference in methods, and one change over time. Use the completed research profiles as evidence, but write your own comparison.</p></section>\n<section class=\"reading-card\"><h3>3. Connect your research to the film · 12 minutes</h3><div class=\"ai-rule ai-rule-red\"><strong>RED · No AI</strong><p>Develop and write your film connections independently, without AI-generated answers or corrections.</p></div><p>Complete “Connecting the research to Cecil and Louis.” Use two specific scenes from your own film notes. For each scene, explain the character’s choice, its connection to a historical strategy, and an important difference. King’s nonviolence was active resistance; Malcolm X advocated self-defense and his views changed. Cecil is not simply “King” and Louis is not simply “Malcolm X”: Louis also practices nonviolent protest. Distinguish Malcolm X from the later Black Panther Party.</p></section>\n<section class=\"independent-lesson\"><h3>4. Check and submit · 5 minutes</h3><p>Use the first three minutes of the lesson to organize your groups, then follow the timings above. At the end, check that your three answer fields contain the research profile, your own comparison, and your own film connections. Include sources and your AI-use note.</p><p>Choose <b>“Als PDF exportieren” → “Aktuelles Kapitel”</b>, create the PDF, and upload it to the <b>IServ Aufgaben module</b>. Each student submits their own file: <b>FirstName_LastName_TwoPaths.pdf</b>. Open the PDF to check its contents and confirm the IServ upload. Browser autosave does not submit your work.</p><p>For this independent lesson, complete <b>Context only</b>. The Freedom Rides extension below and the steps Write, Revise, and Plenary are for a later lesson. We will discuss your findings when your teacher returns.</p></section>\n<details><summary>Later extension: the Freedom Rides · GREEN research</summary><p>Use your research posters and the Freedom Riders source. Identify the aims of the 1961 Freedom Rides and what happened near Anniston on May 14 before riders continued toward Birmingham. Keep history distinct from the film’s reconstruction.</p><figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"freedom-rides.jpg\" alt=\"Photograph of a burning Freedom Riders bus\"><figcaption>Historical photograph used in the supplied slides, slide 40. Check its context against the National Park Service source.</figcaption></figure></details>",
+        "ai": "mixed",
+        "aiFields": {
+          "leader_profile": "green",
+          "leader_comparison": "red",
+          "leader_film_transfer": "red",
+          "context": "green"
+        }
       },
       {
         "tab": "Write",
@@ -1068,7 +1083,10 @@ const COURSE = [
             "Claim → scene evidence → technique → effect → connection to the central argument. About 250–350 words.",
             "long"
           ]
-        ]
+        ],
+        "aiFields": {
+          "analysis": "amber"
+        }
       },
       {
         "tab": "Revise",
@@ -1119,7 +1137,7 @@ const COURSE = [
         ]
       }
     ],
-    "teaching": "10. November 2026 · LK: Zwei Klassenhälften bilden: A recherchiert King, B Malcolm X. 45 Minuten: 5 Min. Szenenimpuls/Organisation, 18 Min. arbeitsteilige Recherche innerhalb der beiden Gruppen, 8 Min. Austausch (je 3 Min. Bericht + 2 Min. Rückfragen), 6 Min. Filmtransfer, 8 Min. Plenumssicherung. Bestehenden Schreibauftrag (250–350 Wörter, optionale KI-Korrektur) und Peer-Revision als Hausaufgabe bzw. Anschlussarbeit nutzen; Freedom-Rides-Abgleich zur Vertiefung. Keine Gleichsetzung Cecil = King / Louis = Malcolm X: Louis’ gewaltfreie Protestphase und spätere Entwicklung herausarbeiten. Malcolm X nicht mit der späteren Black Panther Party gleichsetzen. Datierung und Wandel seiner Positionen beachten. Folien 34–41 und 45–46; Kennedy entfällt. Lektüreauftrag: Part One bis Beginn W5. Plenumssicherung gemeinsam protokollieren und separat herunterladen.",
+    "teaching": "Selbstständige Stunde am 11. November 2026 ohne Lehrkraft: nur Context bearbeiten. 3 Min. Organisation, 17 Min. Gruppenrecherche (GRÜN), 8 Min. Profile austauschen und individuellen Vergleich schreiben (ROT), 12 Min. individueller Filmtransfer (ROT), 5 Min. Selbstkontrolle und individuelle PDF-Abgabe im IServ-Aufgabenmodul. Keine lehrkraftgeleitete Präsentation oder Plenumssicherung in dieser Stunde. Freedom-Rides-Vertiefung sowie Write, Revise und Plenary später bearbeiten. Gruppenzuordnung und vorhandene Antworten bleiben erhalten. ROT bedeutet ohne KI, auch ohne KI-Korrektur; bereits erstellte Rechercheprofile dürfen als Material genutzt werden.",
     "consolidation": {
       "method": "Joint construction: an analytical paragraph",
       "duration": "8 minutes",
@@ -1203,7 +1221,10 @@ const COURSE = [
             "Partner proofreading",
             "Comment on structure, evidence, register and language. Record two strengths and one revision."
           ]
-        ]
+        ],
+        "aiFields": {
+          "letter": "amber"
+        }
       },
       {
         "tab": "Read & listen",
@@ -1401,7 +1422,10 @@ const COURSE = [
           "I support my claims with specific evidence.",
           "I distinguish historical facts from interpretation.",
           "I have revised my work and saved an editable copy."
-        ]
+        ],
+        "aiFields": {
+          "summary": "amber"
+        }
       },
       {
         "tab": "Plenary",
@@ -1506,7 +1530,13 @@ const COURSE = [
             "What did I verify, correct or clarify? If AI was used, record the tool and the corrected claim; never treat its output as textual evidence."
           ]
         ],
-        "html": "<div class=\"reading-card\"><h3>First reactions · choose two per box</h3><p><b>Personal:</b> What was your first emotional reaction? Which scene stayed with you? What surprised or confused you?</p><p><b>Characters:</b> How do you respond to Stella’s decision to pass? Which twin feels closer to you, and why? Do you trust Early Jones?</p><p><b>Themes:</b> What is your impression of Mallard? How did your understanding of colorism change? Which issue seems relevant today?</p><p><b>Structure:</b> How does the opening establish tone? How do shifts in perspective affect your reading? What does the title suggest?</p><p><b>Prediction, Part One only:</b> Will Stella return? Which secret or conflict could matter later? Which relationship might change?</p></div>"
+        "html": "<div class=\"reading-card\"><h3>First reactions · choose two per box</h3><p><b>Personal:</b> What was your first emotional reaction? Which scene stayed with you? What surprised or confused you?</p><p><b>Characters:</b> How do you respond to Stella’s decision to pass? Which twin feels closer to you, and why? Do you trust Early Jones?</p><p><b>Themes:</b> What is your impression of Mallard? How did your understanding of colorism change? Which issue seems relevant today?</p><p><b>Structure:</b> How does the opening establish tone? How do shifts in perspective affect your reading? What does the title suggest?</p><p><b>Prediction, Part One only:</b> Will Stella return? Which secret or conflict could matter later? Which relationship might change?</p></div>",
+        "aiFields": {
+          "summary-check": {
+            "level": "amber",
+            "detail": "Only after reading Part One: you may request an AI summary of Part One, then check and correct it against your book. Do not use it as textual evidence."
+          }
+        }
       },
       {
         "tab": "Context",
@@ -1525,7 +1555,7 @@ const COURSE = [
             "Write 4–5 sentences for each of two themes. Explain what history clarifies and what remains specific to the novel."
           ]
         ],
-        "html": "<div class=\"reading-card\"><p>Prepare a 3–5 minute explanation and one discussion question. For example: how does knowledge of segregation change your reading of a character’s choices? Historical context illuminates fiction; a character does not represent everyone in a group.</p></div>"
+        "html": "<div class=\"ai-rule ai-rule-green\"><strong>GREEN · Historical research</strong><p>You may use AI freely to research the historical context. This permission applies to research; it does not automatically include your literary interpretation.</p></div><div class=\"reading-card\"><p>Prepare a 3–5 minute explanation and one discussion question. For example: how does knowledge of segregation change your reading of a character’s choices? Historical context illuminates fiction; a character does not represent everyone in a group.</p></div>"
       },
       {
         "tab": "Create",
