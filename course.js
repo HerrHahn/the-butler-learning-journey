@@ -955,7 +955,7 @@ const COURSE = [
     "lessons": "15",
     "question": "Does the film oppose service and protest—or connect them?",
     "product": "Comparative analytical paragraph",
-    "intro": "Examine the father–son conflict and how editing brings private and public spaces into dialogue.",
+    "intro": "November 10, 2026: Research Martin Luther King Jr. and Malcolm X, then use their ideas to examine Cecil’s and Louis’s different paths toward change.",
     "image": "freedom-rides.jpg",
     "imageAlt": "Two paths towards change · visual source",
     "imageCredit": "FILM, HISTORY & FICTION",
@@ -967,6 +967,22 @@ const COURSE = [
       {
         "label": "National Archives · Civil Rights Act",
         "url": "https://www.archives.gov/milestone-documents/civil-rights-act"
+      },
+      {
+        "label": "Group A · Stanford King Institute: King’s life and work",
+        "url": "https://kinginstitute.stanford.edu/introduction"
+      },
+      {
+        "label": "Group A · Stanford King Institute: nonviolence",
+        "url": "https://kinginstitute.stanford.edu/nonviolence"
+      },
+      {
+        "label": "Group B · Stanford King Institute: Malcolm X",
+        "url": "https://kinginstitute.stanford.edu/malcolm-x"
+      },
+      {
+        "label": "Group B · National Park Service: Learning from Malcolm X",
+        "url": "https://home.nps.gov/articles/000/learning-from-malcolm-x.htm"
       }
     ],
     "toolkit": [
@@ -981,6 +997,18 @@ const COURSE = [
       [
         "ambivalence",
         "tension between different feelings or judgments"
+      ],
+      [
+        "civil disobedience",
+        "deliberately breaking an unjust law as a form of protest"
+      ],
+      [
+        "self-defense",
+        "protecting oneself or others against an attack"
+      ],
+      [
+        "self-determination",
+        "the ability of a community to shape its own political and social future"
       ]
     ],
     "phrases": "By alternating between…, the director… / Initially…, however… / This complicates the idea that…",
@@ -1000,21 +1028,39 @@ const COURSE = [
       },
       {
         "tab": "Context",
-        "title": "Resistance has a history",
-        "text": "Use the research posters and the Freedom Riders source. Identify the aims of the 1961 Freedom Rides and what happened near Anniston on 14 May before riders continued towards Birmingham. Keep the historical event distinct from the film’s reconstruction.",
+        "title": "King and Malcolm X: two research groups",
+        "text": "Divide the class into two groups. Group A researches Dr. Martin Luther King Jr.; Group B researches Malcolm X. Investigate your leader’s life, goals, methods, actions, and impact. Use the two linked starting sources for your group, record evidence, and prepare to teach the other group.",
         "fields": [
+          [
+            "leader_profile",
+            "Our group’s research profile",
+            "Group A / King or Group B / Malcolm X\nLife: three turning points\nGoals and methods\nTwo actions or examples and their impact\nStrength, limitation, or criticism\nSources: institution, title, URL, and evidence",
+            "long"
+          ],
+          [
+            "leader_comparison",
+            "King and Malcolm X: my comparison",
+            "Compare goals, methods, attitudes toward violence, and impact. Include one shared goal, one key difference, and one change over time.",
+            "long"
+          ],
+          [
+            "leader_film_transfer",
+            "Connecting the research to Cecil and Louis",
+            "Use two scenes: character → action → connection to a historical strategy → important difference. Explain why the characters cannot be assigned to the two leaders one-to-one.",
+            "long"
+          ],
           [
             "context",
             "Historical context",
             "Aim; event; relevance to Louis; source"
           ]
         ],
-        "html": "<figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"freedom-rides.jpg\" alt=\"Photograph of a burning Freedom Riders bus\"><figcaption>Historical photograph used in the supplied slides, slide 40. Check its context against the National Park Service source.</figcaption></figure>"
+        "html": "<div class=\"reading-card\"><h3>Group A · Dr. Martin Luther King Jr.</h3><ol><li><b>Life:</b> Identify three important experiences or turning points. Explain how they shaped his beliefs.</li><li><b>Goals and methods:</b> Explain nonviolent direct action, civil disobedience, and interracial cooperation. Why could these methods put pressure on those in power?</li><li><b>Actions and impact:</b> Investigate two campaigns, such as the Montgomery bus boycott, Birmingham, or Selma. Explain what people did, the risks they faced, and the results.</li><li><b>Evaluate:</b> Identify one strength and one limitation or contemporary criticism of his approach. Support your judgment with evidence.</li></ol><p><a href=\"https://kinginstitute.stanford.edu/introduction\" target=\"_blank\" rel=\"noopener\">King’s life and work · Stanford ↗</a><br><a href=\"https://kinginstitute.stanford.edu/nonviolence\" target=\"_blank\" rel=\"noopener\">Nonviolence · Stanford ↗</a></p></div>\n<div class=\"reading-card\"><h3>Group B · Malcolm X</h3><ol><li><b>Life:</b> Identify three important experiences or turning points, including his time in the Nation of Islam and his changing views in 1964.</li><li><b>Goals and methods:</b> Explain Black self-determination, self-defense, and his criticism of nonviolent integration strategies. Distinguish self-defense from initiating violence.</li><li><b>Actions and impact:</b> Investigate two examples of his speeches, organizing, or international work. Explain his aims, audience, and influence.</li><li><b>Evaluate:</b> Identify one strength and one limitation or contemporary criticism of his approach. Explain how his position developed over time.</li></ol><p><a href=\"https://kinginstitute.stanford.edu/malcolm-x\" target=\"_blank\" rel=\"noopener\">Malcolm X · Stanford ↗</a><br><a href=\"https://home.nps.gov/articles/000/learning-from-malcolm-x.htm\" target=\"_blank\" rel=\"noopener\">Learning from Malcolm X · National Park Service ↗</a></p></div>\n<div class=\"reading-card\"><h3>Exchange · compare · connect</h3><p><b>Research (18 minutes):</b> Divide the work within each group: life, methods, actions, and impact. Agree on a concise profile supported by both sources.</p><p><b>Exchange (8 minutes):</b> Each group has three minutes to explain its findings; use the remaining two minutes for questions. Everyone takes notes on both leaders.</p><p><b>Film transfer (6 minutes):</b> Compare the two approaches. Identify a shared goal, a key disagreement, and a limitation of the comparison. Then connect your findings to two specific scenes involving Cecil and Louis.</p><p><b>Think carefully:</b> King’s nonviolence was active resistance. Malcolm X advocated self-defense, and his views changed. Cecil is not simply “King” and Louis is not simply “Malcolm X”: Louis also practices nonviolent protest. Distinguish Malcolm X’s ideas from the later Black Panther Party, and trace how the film characters change.</p></div>\n<details><summary>Historical bridge: the Freedom Rides</summary><p>Use your research posters and the Freedom Riders source. Identify the aims of the 1961 Freedom Rides and what happened near Anniston on May 14 before riders continued toward Birmingham. Keep history distinct from the film’s reconstruction.</p><figure class=\"lesson-figure\"><img loading=\"lazy\" src=\"freedom-rides.jpg\" alt=\"Photograph of a burning Freedom Riders bus\"><figcaption>Historical photograph used in the supplied slides, slide 40. Check its context against the National Park Service source.</figcaption></figure></details>"
       },
       {
         "tab": "Write",
-        "title": "Analyse the construction of conflict",
-        "text": "Write an analytical paragraph or short essay. Explain how the film presents service and direct action through characterisation and at least two film techniques.",
+        "title": "Analyze the construction of conflict",
+        "text": "Write an analytical paragraph or short essay. Explain how the film presents service and direct action through characterization and at least two film techniques. Use your research on King and Malcolm X to contextualize your interpretation, and explain where a simple comparison does not fit. Optional AI feedback is available below your writing field.",
         "fields": [
           [
             "analysis",
@@ -1056,7 +1102,7 @@ const COURSE = [
           [
             "class_evidence",
             "Our evidence and connections",
-            "Claim | scene evidence | technique | effect | qualification",
+            "Historical strategy | source | Cecil/Louis scene | film technique and effect | limit of the comparison",
             "long"
           ],
           [
@@ -1073,17 +1119,18 @@ const COURSE = [
         ]
       }
     ],
-    "teaching": "W3 Einzelstunde: 5 Min. Szenenauswahl, 8 Min. historischer Abgleich, 20 Min. Schreiben, 8 Min. Peer-Feedback, 4 Min. Sicherung. Schreibauftrag zu Hause ggf. ausbauen. Folien 34–41 und 45–46 dienen als Hintergrund; Kennedy entfällt. Lektüreauftrag am Stundenende: Part One bis Beginn W5, mit Leseprotokoll aus Kapitel 9. Plenumssicherung: Joint construction: an analytical paragraph (8 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "teaching": "10. November 2026 · LK: Zwei Klassenhälften bilden: A recherchiert King, B Malcolm X. 45 Minuten: 5 Min. Szenenimpuls/Organisation, 18 Min. arbeitsteilige Recherche innerhalb der beiden Gruppen, 8 Min. Austausch (je 3 Min. Bericht + 2 Min. Rückfragen), 6 Min. Filmtransfer, 8 Min. Plenumssicherung. Bestehenden Schreibauftrag (250–350 Wörter, optionale KI-Korrektur) und Peer-Revision als Hausaufgabe bzw. Anschlussarbeit nutzen; Freedom-Rides-Abgleich zur Vertiefung. Keine Gleichsetzung Cecil = King / Louis = Malcolm X: Louis’ gewaltfreie Protestphase und spätere Entwicklung herausarbeiten. Malcolm X nicht mit der späteren Black Panther Party gleichsetzen. Datierung und Wandel seiner Positionen beachten. Folien 34–41 und 45–46; Kennedy entfällt. Lektüreauftrag: Part One bis Beginn W5. Plenumssicherung gemeinsam protokollieren und separat herunterladen.",
     "consolidation": {
       "method": "Joint construction: an analytical paragraph",
       "duration": "8 minutes",
       "steps": [
-        "Select one contrast between service and protest (1 min).",
-        "Contribute a claim, scene evidence and a film technique (2 min).",
-        "Build a paragraph aloud, explaining effects rather than retelling (3 min).",
-        "Test an alternative reading and revise the conclusion (2 min)."
+        "Agree on one shared goal and one strategic difference between King and Malcolm X (2 min).",
+        "Connect two film scenes to the research; identify where the comparison breaks down (2 min).",
+        "Build an analytical claim with scene evidence and a film technique (2 min).",
+        "Qualify the claim and record the shared paragraph plus an open question (2 min)."
       ]
-    }
+    },
+    "date": "10. November 2026"
   },
   {
     "id": "obama",
