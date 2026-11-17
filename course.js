@@ -1157,8 +1157,8 @@ const COURSE = [
     "hours": 3,
     "lessons": "16–18",
     "question": "How much change does a presidency represent?",
-    "product": "Open letter & speech analysis",
-    "intro": "Bring the film’s historical arc to a close: distinguish the hopes of 2008 from the questions raised in Charleston in 2015.",
+    "product": "Speech analysis, group concept map & group speech",
+    "intro": "Continue after your open letter: analyze Obama’s Charleston speech, then assess the limits of progress in a group concept map and a speech.",
     "image": "obama-charleston.jpg",
     "imageAlt": "A new era? · visual source",
     "imageCredit": "FILM, HISTORY & FICTION",
@@ -1179,7 +1179,7 @@ const COURSE = [
     "toolkit": [
       [
         "eulogy",
-        "a speech honouring someone who has died"
+        "a speech honoring someone who has died"
       ],
       [
         "anaphora",
@@ -1229,50 +1229,107 @@ const COURSE = [
       {
         "tab": "Read & listen",
         "title": "Charleston, 2015",
-        "text": "Watch a teacher-selected passage and read the linked eulogy for Reverend Clementa Pinckney, delivered on 26 June 2015 after the racist attack at Emanuel AME Church. Examine how Obama connects remembrance, grace and collective responsibility.",
+        "text": "Analyze how Obama uses language to connect remembrance, grace, and collective responsibility in his Charleston eulogy. Support your analysis with five short quotations and explain how each language choice helps convey his message to the audience.",
         "fields": [
           [
             "rhetoric",
-            "Five language choices",
-            "Short quotation / location | device or choice | effect in context | purpose",
+            "My analysis of Obama’s language",
+            "Write five short analytical paragraphs in full sentences. In each paragraph, make a point about Obama’s language, give a short quotation with a paragraph opening or other clear location, and explain its effect in this context and its contribution to his purpose. You may discuss the same device in different passages if its function differs. Do not just name devices or summarize the speech.",
             "long"
           ],
           [
             "mediation",
             "Sprachmittlung: eine E-Mail auf Deutsch",
-            "Ein Freund interessiert sich für US-Politik. Erkläre ihm in einer kurzen E-Mail, was Obama über Rassismus und gesellschaftliche Verantwortung sagt. Wähle die für ihn relevanten Aspekte; übersetze nicht Satz für Satz.",
+            "Spätere Vertiefung, nicht Teil der selbstständigen Stunde am 18. November. Vorhandene Ergebnisse bleiben erhalten. Ein Freund interessiert sich für US-Politik. Erkläre ihm in einer kurzen E-Mail, was Obama über Rassismus und gesellschaftliche Verantwortung sagt. Wähle relevante Aspekte; übersetze nicht Satz für Satz.",
             "long"
           ]
         ],
-        "html": "<div class=\"reading-card\"><p><a href=\"https://obamawhitehouse.archives.gov/the-press-office/2015/06/26/remarks-president-eulogy-honorable-reverend-clementa-pinckney\" target=\"_blank\" rel=\"noopener\">Read the official transcript ↗</a>. Focus on the section beginning with the role of the Black church and the later passages on the Confederate flag, inequality and grace. Use paragraph openings or short quotations as references.</p></div><figure class=\"lesson-figure\"><a href=\"obama-charleston.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"obama-charleston.jpg\" alt=\"Obama delivers the Charleston eulogy\"></a><figcaption>Charleston, 2015 · supplied slide 52 · click to enlarge</figcaption></figure>"
+        "html": "<div class=\"independent-lesson\"><h3>Wednesday, November 18 · Independent work</h3><p>Your teacher is absent. Your open letter is already complete: keep it and begin here. Read and analyze the speech individually, then move to Evaluate for the group task. The mediation task is a later extension; Plenary follows on Friday, November 20.</p></div><div class=\"reading-card\"><h3>Read and listen</h3><p>The eulogy was delivered on June 26, 2015, after the racist attack at Emanuel AME Church. Use the <a href=\"https://obamawhitehouse.archives.gov/the-press-office/2015/06/26/remarks-president-eulogy-honorable-reverend-clementa-pinckney\" target=\"_blank\" rel=\"noopener\">official transcript</a> and the video in Materials. Start with the opening remembrance of Pinckney, then focus on the Black church, grace, the Confederate flag, continuing inequality, and responsibility for change. If you cannot play the video, work with the transcript.</p><p><b>Analyze</b> means explaining how the language works and supporting your explanation with evidence. Write connected sentences rather than filling in a quotation/device/effect table.</p></div><details class=\"reading-card\" open><summary><b>Rhetorical devices: a guide for this speech</b></summary><p>A device has no fixed effect. Explain what it does in this particular passage and for this audience. These pointers help you find evidence; they are not a finished analysis.</p><h3>Anaphora</h3><p>Repeating words at the beginnings of successive clauses. <b>In Obama’s speech:</b> Look for “For too long” in the discussion of continuing problems.</p><h3>Parallelism</h3><p>Repeating a grammatical pattern to connect ideas and create rhythm. <b>In Obama’s speech:</b> Compare the clauses about feeding, clothing, and housing people.</p><h3>Inclusive pronouns</h3><p>Using we, us, and our to construct a shared identity. <b>In Obama’s speech:</b> Track whom Obama includes when he moves from mourning to national responsibility.</p><h3>Metaphor</h3><p>Describing one thing through another to frame how we understand it. <b>In Obama’s speech:</b> Examine the recurring imagery of blindness and sight.</p><h3>Religious allusion</h3><p>Referring to religious texts, beliefs, or traditions. <b>In Obama’s speech:</b> Consider the biblical opening and the reference to the hymn Amazing Grace.</p><h3>Contrast / antithesis</h3><p>Placing contrasting ideas together to sharpen a distinction. <b>In Obama’s speech:</b> Look at the contrast between symbolic gestures and lasting change.</p><h3>Repetition / motif</h3><p>Returning to a word or idea throughout a text. <b>In Obama’s speech:</b> Trace grace across the speech. Ask how its meaning connects different sections.</p><p><b>Useful sentence pattern:</b> Obama uses … in the phrase “…”. In this passage, this emphasizes … and invites the audience to … . This supports his purpose of … .</p><p><b>Persuasive appeals:</b> Ethos concerns credibility, pathos emotion, and logos reasoning. They are broader strategies: explain how a specific language choice supports an appeal.</p><p><a href=\"https://obamawhitehouse.archives.gov/the-press-office/2015/06/26/remarks-president-eulogy-honorable-reverend-clementa-pinckney\" target=\"_blank\" rel=\"noopener\">Source: official White House transcript ↗</a></p></details><figure class=\"lesson-figure\"><a href=\"obama-charleston.jpg\" target=\"_blank\" rel=\"noopener\"><img loading=\"lazy\" src=\"obama-charleston.jpg\" alt=\"Obama delivers the Charleston eulogy\"></a><figcaption>Charleston, 2015 · supplied slide 52 · click to enlarge</figcaption></figure>",
+        "aiFields": {
+          "rhetoric": "red"
+        }
       },
       {
         "tab": "Evaluate",
-        "title": "Progress without a finished story",
-        "text": "Assess the claim that Obama’s election marked the end of racial inequality. Draw on the film and the Charleston speech. End with an oral statement on whether racial violence is also a European issue, using a specific example rather than a sweeping generalisation.",
+        "title": "From a concept map to your group speech",
+        "text": "Assess the claim that Obama’s election marked the end of racial inequality. Draw on The Butler and the Charleston speech. Conclude by assessing whether racial violence is also a European issue, using one specific, verified example and acknowledging the limits of the comparison.",
         "fields": [
           [
             "judgment",
-            "My evaluation",
-            "A balanced argument using evidence from both media.",
+            "Earlier individual evaluation — retained",
+            "Your previous work remains here. You may consult it when discussing the group’s judgment; the new group results belong in the fields below.",
             "long"
           ],
           [
             "oral",
-            "My one-minute statement",
-            "Claim → example → explanation → qualification."
+            "Earlier oral statement — retained",
+            "Your previous statement remains here. Use the new group speech fields below for this task."
+          ],
+          [
+            "speech_group",
+            "Our group and presentation roles",
+            "Group number; members; responsibilities; speaker and backup for Friday."
+          ],
+          [
+            "concept_map",
+            "Our concept map: key connections",
+            "Record your claim, branches, labeled connections, evidence, European example, and qualified judgment. Add source titles and URLs and explain any AI use. Keep the visual map separately as an image or PDF.",
+            "long"
+          ],
+          [
+            "speech_outline",
+            "Our speech outline",
+            "Record the outline you will use. State whether AI helped; verify the evidence and revise the outline as a group.",
+            "long"
+          ],
+          [
+            "speech_draft",
+            "Our self-written speech — original draft",
+            "Write the speech yourselves using your outline. Keep this original draft when you later make corrections. No AI-generated or AI-translated speech text.",
+            "long"
+          ],
+          [
+            "speech_final",
+            "Our final speech for Friday",
+            "Copy your draft here, then make corrections you have checked. AI may suggest local language corrections, but must not rewrite the speech or add arguments.",
+            "long"
+          ],
+          [
+            "speech_ai_log",
+            "Our sources and AI-use note",
+            "List sources for your European example and other researched claims. Record the AI tool and its use for concept map, outline, or correction; note what you changed or rejected. Do not enter personal data into AI tools.",
+            "long"
           ]
         ],
         "checks": [
-          "I support my claims with specific evidence.",
-          "I distinguish historical facts from interpretation.",
-          "I have revised my work and saved an editable copy."
-        ]
+          "Our judgment uses evidence from the film, the speech, and a verified European example.",
+          "We wrote the speech ourselves, documented permitted AI use, and kept the original draft.",
+          "Our speaker and backup are ready for Friday; everyone has saved the work and checked the IServ submission."
+        ],
+        "html": "<div class=\"reading-card\"><h3>Work in groups of about four</h3><p>Form six groups: four groups of four and two groups of three if all 22 students are present. Record your members below. Share responsibility for evidence from the film, evidence from the speech, the European example, and editing. In groups of three, combine roles.</p><h3>1. Build your concept map · GREEN</h3><p>Put the claim at the center. Add branches for evidence of progress, continuing inequality, evidence from the film, evidence from Charleston, your European example, and your qualified judgment. Label connections to show how the evidence supports or challenges the claim. AI may help freely with research, ideas, and the map; verify facts and sources.</p><p>You may draw the map on paper or your iPad and submit it as a separate image or PDF. Also record its main connections in the field below so they are included in the chapter PDF. Each member keeps a copy.</p><h3>2. Write a group speech · AMBER</h3><p>Write a speech for your classmates answering the assessment question. Use an engaging opening, a clear position, evidence from both the film and the eulogy, a counterargument or qualification, and a conclusion that includes your specific European example. Use rhetorical devices purposefully.</p><p><b>AI may propose an outline based on your checked concept map. You must write the speech yourselves.</b> Do not ask AI to generate, expand, translate, or rewrite the speech. After writing, AI may identify language errors and suggest local corrections with explanations. Review every suggestion yourselves and preserve your original draft.</p><p>Use only an approved AI tool, without personal data. For this new speech task, use that tool directly with the prompts below; the website’s existing open-letter correction is for the open letter, not this speech.</p><details><summary>Permitted AI prompts: outline and correction</summary><p><b>Outline:</b> Using our verified concept map below, suggest a bullet-point outline for a speech assessing the claim. Give section headings and brief points only. Do not write speech sentences or add unverified evidence.</p><p><b>Correction:</b> Review our self-written speech for grammar, spelling, and word choice in American English. Identify local errors and suggest corrections with brief explanations. Do not rewrite paragraphs, add arguments, or produce a replacement speech.</p></details><h3>3. Prepare for Friday, November 20</h3><p>Choose one speaker and a backup. Rehearse the speech so one member can deliver it on Friday. All members must understand the argument and evidence. Check pronunciation, emphasis, and transitions.</p><h3>Save and submit</h3><p>Each student keeps their individual analysis and a copy of the group results in their own portfolio. Export the current chapter as a PDF and upload it to the IServ assignment. One group member also uploads the visual concept map and the final speech, identified by group number. Submit your current work at the end of Wednesday’s lesson; finish and rehearse the speech before Friday. Saving in the browser is not an IServ submission.</p></div>",
+        "aiFields": {
+          "concept_map": {
+            "level": "green",
+            "detail": "AI may be used freely for research and your concept map. Verify evidence and sources and document how you used AI."
+          },
+          "speech_outline": {
+            "level": "amber",
+            "detail": "AI may suggest an outline from your checked concept map. Review the structure and evidence yourselves."
+          },
+          "speech_draft": {
+            "level": "amber",
+            "detail": "This writing phase is your own work: write the speech yourselves. AI is allowed for the outline beforehand and local language correction afterward, not for generating or translating the speech."
+          },
+          "speech_final": {
+            "level": "amber",
+            "detail": "AI may identify language errors and suggest local corrections with explanations. Check suggestions yourselves. No AI rewriting, new arguments, or replacement speech."
+          }
+        }
       },
       {
         "tab": "Plenary",
         "title": "What we agree on",
-        "text": "Bring your findings together as a class. One nominated scribe records the agreed results on the projected website; classmates check the wording and evidence before the download. Different interpretations may remain unresolved.",
+        "text": "Friday, November 20: hear one speaker from each group, then bring the findings together as a class. One nominated scribe records the agreed results; classmates check wording and evidence. Do not complete this plenary task during Wednesday’s independent lesson.",
         "plenary": true,
         "fields": [
           [
@@ -1301,7 +1358,7 @@ const COURSE = [
         ]
       }
     ],
-    "teaching": "W4 DS1, Std. 16–17: 10 Min. Filmende, 10 Min. Argumente, 40 Min. offener Brief, 15 Min. Peer-Feedback, 15 Min. Überarbeitung. W4 DS2, Std. 18: 8 Min. Charleston-Kontext/Video, 15 Min. Rhetorik in Expertengruppen, 12 Min. Sprachmittlung, 10 Min. Urteil. E-Mail/Analyse ggf. zu Hause fertigstellen. Folien 47–53 und Charleston Obama.docx. Obama bildet den Filmabschluss; erst danach folgt der inhaltliche Romanübergang. Plenumssicherung: Continuum debate: progress and its limits (12 minutes). Die Sicherung ersetzt den bisherigen abschließenden Austausch bzw. die Schlussreflexion; bei Bedarf individuelle Schreibarbeit als Hausaufgabe beenden. Protokoll am projizierten Lehrkraftgerät führen und als separate PDF herunterladen; kein automatischer Abgleich zwischen Geräten.",
+    "teaching": "18. November 2026: Selbstständige Arbeit ohne Lehrkraft. Open Letter ist abgeschlossen und bleibt erhalten. Individuelle Sprachanalyse mit dem Operator Analyze (ROT), danach sechs Gruppen mit drei bis vier Lernenden: Concept Map (GRÜN), Outline, selbst geschriebene Speech und KI-Sprachkorrektur (GELB). Sprachmittlung später. 20. November: je ein Gruppenmitglied trägt die Rede vor; Ersatzperson vorbereiten, anschließend gemeinsame Sicherung. Alte Antwortschlüssel, Kapitel- und Schrittfolge bleiben unverändert; neue Gruppenfelder werden ergänzt.",
     "consolidation": {
       "method": "Continuum debate: progress and its limits",
       "duration": "12 minutes",
